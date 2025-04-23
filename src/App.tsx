@@ -1,9 +1,12 @@
+import { Home } from "./components/pages";
+import { WebFooter } from "./components/layout";
 
 function App() {
 
   return (
     <>
-    Designo
+      <Home />
+      <WebFooter />
     </>
   )
 }

@@ -1,0 +1,1 @@
+export { default as WebFooter } from "./webFooter/WebFooter";
