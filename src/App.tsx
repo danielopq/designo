@@ -1,10 +1,11 @@
 import { Home } from "./components/pages";
-import { WebFooter } from "./components/layout";
+import { WebFooter, TopNavBar } from "./components/layout";
 
 function App() {
 
   return (
     <>
+      <TopNavBar />
       <Home />
       <WebFooter />
     </>
