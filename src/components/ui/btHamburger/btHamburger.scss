@@ -1,0 +1,17 @@
+.btHamburger{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.hamburgerIcon{
+    background-image: url('../../../assets/img/shared/icon-hamburger.svg');
+}
+
+.closeIcon{
+    background-image: url('../../../assets/img/shared/icon-close.svg');
+}
