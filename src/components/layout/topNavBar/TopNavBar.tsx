@@ -1,6 +1,7 @@
 import './topNavBar.scss';
-import { BtHamburger } from '../../ui';
 import { useState } from 'react';
+import { NavBar } from '../../layout';
+import { BtHamburger } from '../../ui';
 
 const TopNavBar: React.FC = () => {
     const [mobileMenu, setMobileMenu] = useState<boolean>(false);
@@ -12,6 +13,7 @@ const TopNavBar: React.FC = () => {
     return (
         <div id="topNavBar">
             <div>
+                <NavBar />
                 <BtHamburger menuDeployed={mobileMenu} handleClick={handleClick} />
             </div>
         </div>

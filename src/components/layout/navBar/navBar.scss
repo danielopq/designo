@@ -1,0 +1,16 @@
+@use '../../../../src/assets/scss/breakpoints';
+
+.navBar{
+    width: 370px;
+    height: 14px;
+    border: solid 1px red;
+}
+
+//############################## MOBILE VERSION ##############################
+
+@include breakpoints.mobile {
+    .navBar{
+        width: 370px;
+        height: 14px;
+    }
+}

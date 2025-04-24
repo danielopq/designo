@@ -1,4 +1,6 @@
-.btHamburger{
+@use '../../../assets/scss/breakpoints';
+
+.btHamburger {
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -8,10 +10,18 @@
     border: none;
 }
 
-.hamburgerIcon{
+.hamburgerIcon {
     background-image: url('../../../assets/img/shared/icon-hamburger.svg');
 }
 
-.closeIcon{
+.closeIcon {
     background-image: url('../../../assets/img/shared/icon-close.svg');
+}
+
+//############################## TABLET AND DESKTOP VERSION ##############################
+
+@include breakpoints.tabletAndDesktop {
+    .btHamburger {
+        display: none;
+    }
 }
