@@ -13,4 +13,40 @@
     align-items: center;
     justify-content: flex-end;
     background: transparent url('../../../assets/img/shared/logo-dark.png') left/202px no-repeat;
+    nav.navBar{
+        display: none;
+    }
 }
+
+//############################## TABLET AND DESKTOP VERSION ##############################
+
+    @include breakpoints.tabletAndDesktop {
+        #topNavBar {
+            height: 155px;
+            padding: 0px;
+        }
+        
+        #topNavBar>div {
+            nav.navBar{
+                display: inline-flex;
+            }
+        }
+    }
+
+//############################## TABLET VERSION ##############################
+
+    @include breakpoints.tabletAndDesktop {
+        #topNavBar {
+            max-width: 768px;
+            padding: 64px 40px 0px;
+        }
+    }
+
+    //############################## DESKTOP VERSION ##############################
+
+    @include breakpoints.desktop {
+        #topNavBar {
+            max-width: 1440px;
+            padding: 64px 165px 0px;
+        }
+    }
