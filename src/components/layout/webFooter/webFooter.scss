@@ -1,0 +1,24 @@
+#webFooter {
+    width: 100vw;
+    height: 815px;
+    padding: 253px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+
+    #topWebfooter {
+        width: 100vw;
+        max-width: 327px;
+        height: 60px;
+        background: url('../../../assets/img/shared/logo-light.png') center/202px no-repeat;
+        border-bottom: solid 1px rgba(255,255,255,0.1);
+    }
+
+    #bottomWebfooter{
+        width: 100%;
+        height: 260px;
+        margin-top: 178px;
+        border: solid 1px red;
+    }
+}

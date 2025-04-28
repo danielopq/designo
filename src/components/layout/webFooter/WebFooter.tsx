@@ -3,7 +3,11 @@ import './webFooter.scss';
 const WebFooter: React.FC = () => {
     return (
         <footer id="webFooter">
-            webFooter
+            <div id="topWebfooter"></div>
+            <div id="bottomWebfooter">
+                <div id="webFooterDetails"></div>
+                <div id="webFooterMedia"></div>
+            </div>
         </footer>
     )
 
