@@ -10,7 +10,13 @@
     font-weight: 500;
 }
 
-:root{
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url('../fonts/Jost-Bold.woff');
+    font-weight: 700;
+}
+
+:root {
     --darkGrey: #333136; // rgb(51, 49, 54) hsl(264, 5%, 20%)
     --black: #1D1C1E; //rgb(29, 28, 30) hsl(270, 3%, 11%)
 }
@@ -27,12 +33,26 @@ body {
     align-items: center;
 }
 
+
+button {
+    cursor: pointer;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
 #root {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-button{
-    cursor: pointer;
+.defaultTextReg {
+    font: 400 16px/26px 'Jost-Regular';
+}
+
+.defaultTextBold {
+    font: 700 16px/26px 'Jost-Bold';
 }
