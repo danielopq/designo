@@ -1,5 +1,7 @@
 import './webFooter.scss';
 
+import { BtMedia } from '../../ui';
+
 const WebFooter: React.FC = () => {
     return (
         <footer id="webFooter">
@@ -15,7 +17,13 @@ const WebFooter: React.FC = () => {
                     <p className='defaultTextReg'>P : +1 253-863-8967</p>
                     <p className='defaultTextReg'>M : contact@designo.co</p>
                 </div>
-                <div id="webFooterMedia"></div>
+                <div id="webFooterMedia">
+                    <BtMedia />
+                    <BtMedia />
+                    <BtMedia />
+                    <BtMedia />
+                    <BtMedia />
+                </div>
             </div>
         </footer>
     )
