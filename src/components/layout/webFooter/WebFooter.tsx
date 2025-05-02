@@ -18,11 +18,11 @@ const WebFooter: React.FC = () => {
                     <p className='defaultTextReg'>M : contact@designo.co</p>
                 </div>
                 <div id="webFooterMedia">
-                    <BtMedia />
-                    <BtMedia />
-                    <BtMedia />
-                    <BtMedia />
-                    <BtMedia />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-facebook.svg' />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-youtube.svg' />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-twitter.svg' />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-pinterest.svg' />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-instagram.svg' />
                 </div>
             </div>
         </footer>
