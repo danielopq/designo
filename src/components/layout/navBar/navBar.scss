@@ -1,18 +1,19 @@
 @use '../../../../src/assets/scss/breakpoints';
 
 .navBar{
-    width: 370px;
-    height: 14px;
-    display: inline-flex;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-//############################## MOBILE VERSION ##############################
+//############################## TABLET AND DESKTOP VERSION ##############################
 
-@include breakpoints.mobile {
+@include breakpoints.tabletAndDesktop {
     .navBar{
         width: 370px;
         height: 14px;
+        flex-direction: row;
     }
 }
