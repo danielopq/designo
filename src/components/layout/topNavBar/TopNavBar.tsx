@@ -13,7 +13,7 @@ const TopNavBar: React.FC = () => {
     return (
         <div id="topNavBar">
             <div>
-                <NavBar />
+                <NavBar navBarStyle='dark' />
                 <BtHamburger menuDeployed={mobileMenu} handleClick={handleClick} />
             </div>
         </div>

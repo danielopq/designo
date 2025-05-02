@@ -1,11 +1,14 @@
 import './webFooter.scss';
 
 import { BtMedia } from '../../ui';
+import NavBar from '../navBar/NavBar';
 
 const WebFooter: React.FC = () => {
     return (
         <footer id="webFooter">
-            <div id="topWebfooter"></div>
+            <div id="topWebfooter">
+                <NavBar navBarStyle='light' />
+            </div>
             <div id="bottomWebfooter">
                 <div id="webFooterAddress">
                     <p className='defaultTextBold'>Designo Central Office</p>
