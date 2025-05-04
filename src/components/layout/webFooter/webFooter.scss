@@ -1,5 +1,8 @@
+@use '../../../assets/scss/breakpoints';
+
 #webFooter {
     width: 100vw;
+    max-width: 1440px;
     height: 815px;
     padding: 253px 24px 0px;
     display: flex;
@@ -8,13 +11,13 @@
     background-color: var(--black);
 
     #topWebfooter {
-        width: 100vw;
+        width: 100%;
         max-width: 327px;
         height: 60px;
         background: url('../../../assets/img/shared/logo-light.png') center/202px no-repeat;
         border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 
-        nav{
+        nav {
             margin-top: 92px;
         }
     }
@@ -30,11 +33,104 @@
         text-align: center;
         color: rgba(255, 255, 255, 0.5);
 
+        &>div:first-child {
+            width: 100%;
+            height: 196px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         #webFooterMedia {
             width: 184px;
             height: 24px;
             display: inline-flex;
             justify-content: space-between;
+        }
+    }
+}
+
+//############################## TABLET AND DESKTOP VERSION ##############################
+
+@include breakpoints.tabletAndDesktop {
+    #webFooter {
+        #topWebfooter {
+            max-width: 690px;
+            height: 68px;
+            padding-top: 7px;
+            display: inline-flex;
+            justify-content: flex-end;
+            background-position: 0% 0%;
+
+            nav {
+                margin-top: 0px;
+            }
+        }
+
+        #bottomWebfooter {
+            height: 78px;
+            max-width: 690px;
+            margin-top: 31px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+
+            &>div:first-child {
+                height: inherit;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #webFooter {
+        height: 423px;
+        padding: 166px 40px 0px;
+
+        #topWebfooter {
+            max-width: 690px;
+            height: 68px;
+        }
+
+        #bottomWebfooter {
+            height: 78px;
+            max-width: 690px;
+
+            &>div:first-child {
+                max-width: 456px;
+            }
+        }
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #webFooter {
+        height: 393px;
+        padding: 144px 40px 0px;
+
+        #topWebfooter {
+            max-width: 1111px;
+            height: 68px;
+        }
+
+        #bottomWebfooter {
+            height: 78px;
+            max-width: 1111px;
+
+            &>div:first-child {
+                max-width: 730px;
+
+                div {
+                    width: 350px;
+                }
+            }
         }
     }
 }
