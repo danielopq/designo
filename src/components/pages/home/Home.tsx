@@ -1,8 +1,12 @@
 import './home.scss';
 
-const Home:React.FC = ()=>{
-    return(
-        <main id="home">Home</main>
+import { HomeHeader } from './components';
+
+const Home: React.FC = () => {
+    return (
+        <main id="home">
+            <HomeHeader />
+        </main>
     )
 }
 export default Home;
