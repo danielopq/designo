@@ -1,5 +1,21 @@
-#homeHeader{
+#homeHeader {
     width: 100vw;
     height: 843px;
-    border:solid 1px red;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--peach);
+    color: white;
+
+    h1 {
+        width: 327px;
+    }
+
+    p{
+        width: 327px;
+        margin-top: 14px;
+        font: 400 15px/25px 'Jost-Regular';
+    }
 }

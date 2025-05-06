@@ -17,8 +17,9 @@
 }
 
 :root {
+    --peach: #E7816B; // rgb(231, 129, 107) hsl(11, 73%, 66%)
     --darkGrey: #333136; // rgb(51, 49, 54) hsl(264, 5%, 20%)
-    --black: #1D1C1E; //rgb(29, 28, 30) hsl(270, 3%, 11%)
+    --black: #1D1C1E; // rgb(29, 28, 30) hsl(270, 3%, 11%)
 }
 
 * {
@@ -37,9 +38,13 @@ button {
     cursor: pointer;
 }
 
-p {
+p,h1 {
     padding: 0px;
     margin: 0px;
+}
+
+h1{
+    font: 500 32px/36px 'Jost-Medium';
 }
 
 #root {
