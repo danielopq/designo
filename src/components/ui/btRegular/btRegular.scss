@@ -1,0 +1,29 @@
+.btRegular {
+    width: 152px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    font: 400 15px/22px 'Jost-Regular';
+    letter-spacing: 1px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    .whiteBg {
+        background-color: white;
+        color: var(--darkGrey);
+    }
+
+    .orangeBg {
+        background-color: #E7816B;
+    }
+
+    @media(hover:hover) {
+        &.whiteBg:hover {
+            background-color: var(--lightPeach);
+            color: white;
+        }
+
+        &.orangeBg:hover {
+            background-color: var(--lightPeach);
+        }
+    }
+}

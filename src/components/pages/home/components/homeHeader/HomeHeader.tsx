@@ -11,7 +11,7 @@ const HomeHeader: React.FC = () => {
                 responsive websites, app design, and engaging brand experiences.
                 Find out more about our services.
             </p>
-            <BtRegular text='GET IN TOUCH' />
+            <BtRegular text='GET IN TOUCH' btType='whiteBg'/>
 
         </header>
     )
