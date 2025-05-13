@@ -1,5 +1,7 @@
 import './homeHeader.scss';
 
+import { BtRegular } from '../../../../ui';
+
 const HomeHeader: React.FC = () => {
     return (
         <header id="homeHeader">
@@ -9,6 +11,7 @@ const HomeHeader: React.FC = () => {
                 responsive websites, app design, and engaging brand experiences.
                 Find out more about our services.
             </p>
+            <BtRegular text='GET IN TOUCH' />
 
         </header>
     )
