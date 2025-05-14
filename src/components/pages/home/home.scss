@@ -1,0 +1,10 @@
+#home{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #homeLargeNavBar{
+        margin-top: 120px;
+    }
+}
