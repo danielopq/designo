@@ -55,3 +55,34 @@
         }
     }
 }
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #homeHeader {
+        max-width: 1111px;
+        height: 640px;
+        padding: 145px 0px 0px 95px;
+        align-items: flex-start;
+        text-align: left;
+        background: url('../../../../../assets/img/home/bg-pattern.svg') right/640px no-repeat,
+            url('../../../../../assets/img/home/hero-phone.png') 560px -26px/624px no-repeat;
+        background-color: var(--peach);
+        border-radius: 15px;
+
+        h1 {
+            width: 540px;
+            height: 165px;
+        }
+
+        p {
+            width: 445px;
+            margin-top: 11px;
+            font: 400 16px/26px 'Jost-Regular';
+        }
+
+        button {
+            margin-top: 40px;
+        }
+    }
+}

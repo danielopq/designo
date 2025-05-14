@@ -72,3 +72,11 @@ h1 {
         font: 500 48px/48px 'Jost-Medium';
     }
 }
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    h1 {
+        font: 500 48px/48px 'Jost-Medium';
+    }
+}
