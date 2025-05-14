@@ -1,11 +1,12 @@
 import './home.scss';
 
-import { HomeHeader } from './components';
+import { HomeHeader, HomeLargeNavBar } from './components';
 
 const Home: React.FC = () => {
     return (
         <main id="home">
             <HomeHeader />
+            <HomeLargeNavBar />
         </main>
     )
 }
