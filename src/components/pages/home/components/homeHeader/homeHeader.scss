@@ -1,3 +1,5 @@
+@use '../../../../../assets/scss/breakpoints';
+
 #homeHeader {
     width: 100vw;
     height: 843px;
@@ -7,7 +9,7 @@
     align-items: center;
     text-align: center;
     background: url('../../../../../assets/img/home/bg-pattern.svg') left/640px no-repeat,
-    url('../../../../../assets/img/home/hero-phone.png') 50% 302px/624px no-repeat;
+        url('../../../../../assets/img/home/hero-phone.png') 50% 302px/624px no-repeat;
     background-color: var(--peach);
     color: white;
 
@@ -15,13 +17,41 @@
         width: 327px;
     }
 
-    p{
+    p {
         width: 327px;
         margin-top: 14px;
         font: 400 15px/25px 'Jost-Regular';
     }
 
-    button{
+    button {
         margin-top: 32px;
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #homeHeader {
+        max-width: 689px;
+        padding-top: 60px;
+        background: url('../../../../../assets/img/home/bg-pattern.svg') 170px 50%/640px no-repeat,
+            url('../../../../../assets/img/home/hero-phone.png') 50% 302px/624px no-repeat;
+        background-color: var(--peach);
+        border-radius: 15px;
+
+        h1 {
+            width: 573px;
+            height: 165px;
+        }
+
+        p {
+            width: 446px;
+            margin-top: 8px;
+            font: 400 16px/26px 'Jost-Regular';
+        }
+
+        button {
+            margin-top: 19px;
+        }
     }
 }

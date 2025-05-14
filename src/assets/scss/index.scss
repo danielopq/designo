@@ -1,3 +1,5 @@
+@use './breakpoints';
+
 @font-face {
     font-family: 'Jost-Regular';
     src: url('../fonts/Jost-Regular.woff');
@@ -39,12 +41,13 @@ button {
     cursor: pointer;
 }
 
-p,h1 {
+p,
+h1 {
     padding: 0px;
     margin: 0px;
 }
 
-h1{
+h1 {
     font: 500 32px/36px 'Jost-Medium';
 }
 
@@ -60,4 +63,12 @@ h1{
 
 .defaultTextBold {
     font: 700 16px/26px 'Jost-Bold';
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    h1 {
+        font: 500 48px/48px 'Jost-Medium';
+    }
 }
