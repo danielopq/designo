@@ -10,7 +10,7 @@ const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = ''
         <div className='btProjectsNavBar' style={{gridArea:gridArea}}>
             <div>
                 <p>{text}</p>
-                <div>VIEW PROJETS</div>
+                <div>VIEW PROJECTS</div>
             </div>
         </div>
     )
