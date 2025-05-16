@@ -3,7 +3,9 @@
     height: 100%;
     border-radius: 15px;
     overflow: hidden;
-    border: solid 1px red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &>div {
         width: inherit;
@@ -14,7 +16,6 @@
         align-items: center;
         justify-content: space-between;
         color: white;
-        background-color: aqua;
 
         p {
             text-align: center;
