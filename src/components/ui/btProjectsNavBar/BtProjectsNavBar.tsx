@@ -9,6 +9,18 @@ type BtProjectsNavBarProps = {
     gridArea?: string;
 }
 
+/**
+ * Button for the Projects navigation bar.
+ * 
+ * @param param0 
+ * @param {string} param0.text - text displayed on the button for mobile viewports. 
+ * @param {string} param0.mobilePic - mobile background image path for mobile viewports. 
+ * @param {string} param0.tabletPic - tablet background image path for mobile viewports.
+ * @param {string} param0.desktopPic - desktop background image path for mobile viewports.
+ * @param {string} param0.gridArea -  Optional CSS grid-area name for layout positioning. 
+ * @returns {React.JSX.Element} - The rendered BtProjectsNavBar component
+ */
+
 const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = '', mobilePic, tabletPic, deskTopPic }) => {
 
     const [backgroundImage, setBackgroundImage] = useState<string>('');
