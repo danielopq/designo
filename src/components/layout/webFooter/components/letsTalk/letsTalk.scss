@@ -1,3 +1,5 @@
+@use '../../../../../../src/assets/scss/breakpoints';
+
 #letsTalk {
     width: 327px;
     height: 379px;
@@ -9,8 +11,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    background: url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -240px 50%/876px 584px no-repeat;
-    background-color: var(--peach);
+    background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -240px 50%/876px 584px no-repeat;
 
     p:first-of-type {
         width: 279px;
@@ -24,3 +25,31 @@
         font: 400 15px/25px 'Jost-Regular';
     }
 }
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #letsTalk {
+        width: 690px;
+        height: 350px;
+        margin-top: -264px;
+        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -20px 50%/876px 584px no-repeat;
+
+        p:first-of-type {
+            width: 335px;
+            height: 98px;
+            margin: 57px 0px 0px;
+            font: 500 40px/40px 'Jost-Medium';
+        }
+
+        p:last-of-type {
+            width: 450px;
+            margin-bottom: 32px;
+            font: 400 16px/26px 'Jost-Regular';
+        }
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {}
