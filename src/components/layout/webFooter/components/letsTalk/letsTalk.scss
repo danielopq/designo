@@ -61,4 +61,38 @@
 
 //############################## DESKTOP VERSION ##############################
 
-@include breakpoints.desktop {}
+@include breakpoints.desktop {
+    #letsTalk {
+        width: 100%;
+        max-width: 1111px;
+        height: 292px;
+        margin-top: -220px;
+        padding: 72px 96px 46px;
+        flex-direction: row;
+        align-items: flex-start;
+        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') 235px 50%/876px 584px no-repeat;
+
+        div {
+            width: 459px;
+            height: 174px;
+            align-items: flex-start;
+            text-align: left;
+
+            p:first-of-type {
+                width: 268px;
+                height: 98px;
+                font: 500 40px/40px 'Jost-Medium';
+            }
+
+            p:last-of-type {
+                width: 459px;
+                height: 78px;
+                font: 400 16px/26px 'Jost-Regular';
+            }
+        }
+
+        button {
+            margin-top: 46px;
+        }
+    }
+}
