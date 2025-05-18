@@ -1,11 +1,13 @@
 import './webFooter.scss';
 
 import { BtMedia } from '../../ui';
+import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
 
 const WebFooter: React.FC = () => {
     return (
         <footer id="webFooter">
+            <LetsTalk />
             <div id="topWebfooter">
                 <NavBar navBarStyle='light' />
             </div>
