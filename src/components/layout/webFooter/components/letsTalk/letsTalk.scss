@@ -4,25 +4,32 @@
     width: 327px;
     height: 379px;
     margin-top: -190px;
+    padding: 64px 0px;
     border-radius: 15px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     color: white;
     background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -240px 50%/876px 584px no-repeat;
 
-    p:first-of-type {
+    div {
         width: 279px;
-        margin: 64px 0px 6px;
-        font: 500 32px/36px 'Jost-Medium';
-    }
+        height: 163px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-    p:last-of-type {
-        width: 279px;
-        margin-bottom: 32px;
-        font: 400 15px/25px 'Jost-Regular';
+        p:first-of-type {
+            font: 500 32px/36px 'Jost-Medium';
+        }
+
+        p:last-of-type {
+            font: 400 15px/25px 'Jost-Regular';
+        }
     }
 }
 
@@ -33,19 +40,21 @@
         width: 690px;
         height: 350px;
         margin-top: -264px;
+        padding: 57px 0px;
+        border-radius: 15px;
         background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -20px 50%/876px 584px no-repeat;
 
-        p:first-of-type {
-            width: 335px;
-            height: 98px;
-            margin: 57px 0px 0px;
-            font: 500 40px/40px 'Jost-Medium';
-        }
+        div {
+            width: 573px;
+            height: 148px;
 
-        p:last-of-type {
-            width: 450px;
-            margin-bottom: 32px;
-            font: 400 16px/26px 'Jost-Regular';
+            p:first-of-type {
+                font: 500 40px/40px 'Jost-Medium';
+            }
+
+            p:last-of-type {
+                font: 400 16px/26px 'Jost-Regular';
+            }
         }
     }
 }
