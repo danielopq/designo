@@ -1,7 +1,28 @@
-#values{
+@use '../../../../../assets/scss/breakpoints';
+
+#values {
     width: 327px;
     height: 1396px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #values {
+        width: 689px;
+        height: 670px;
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #values {
+        width: 1110px;
+        height: 412px;
+        flex-direction: row;
+    }
 }
