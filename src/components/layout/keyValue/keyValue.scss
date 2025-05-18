@@ -4,29 +4,13 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: solid 1px red;
 
     .keyValueHero {
         width: 202px;
         height: 202px;
-        position: relative;
-        border: solid 1px red;
-
-        div:first-child {
-            width: inherit;
-            height: inherit;
-            position: absolute;
-            z-index: 2;
-            background: url('../../../assets/img/home/illustration-friendly.svg') center/202px no-repeat;
-        }
-
-        div:last-child {
-            width: inherit;
-            height: inherit;
-            border-radius: 50%;
-            opacity: 0.2;
-            background: linear-gradient(180deg, rgba(93, 2, 2, 1) 0%, rgba(93, 2, 2, 0.5) 100%);
-        }
+        background-position: center;
+        background-size: 202px;
+        background-repeat: no-repeat;
     }
 
     .KeyValueText {
