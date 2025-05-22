@@ -1,9 +1,11 @@
 import './webDesign.scss';
 
-const WebDesign:React.FC = () => {
-    return(
+import { SectionHeader } from '../../layout';
+
+const WebDesign: React.FC = () => {
+    return (
         <main id="webDesign">
-            hgjhgjhggjhj
+            <SectionHeader />
         </main>
     )
 }
