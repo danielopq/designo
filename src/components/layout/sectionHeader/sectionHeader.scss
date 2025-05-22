@@ -1,4 +1,6 @@
-.sectionHeader{
+@use '../../../assets/scss/breakpoints';
+
+.sectionHeader {
     width: 100vw;
     height: 320px;
     padding: 105px 24px 0px;
@@ -9,11 +11,45 @@
     text-align: center;
     background: var(--peach) url(../../../assets/img/shared/pattern-mixed-circles-reflected.svg) 100% 0% / 876px no-repeat;
 
-    p{
+    p {
         width: 100%;
         max-width: 327px;
         margin-top: 24px;
         font: 400 15px/25px 'Jost-Regular';
     }
 
+}
+
+//############################## TABLET AND DESKTOP VERSION ##############################
+
+@include breakpoints.tabletAndDesktop {
+    .sectionHeader {
+        height: 252px;
+        padding: 64px 70px 0px;
+        border-radius: 15px;
+
+        p {
+            max-width: 400px;
+            font: 400 16px/26px 'Jost-Regular';
+        }
+
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    .sectionHeader {
+        max-width: 689px;
+        background-position: -21px 50%;
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    .sectionHeader {
+        max-width: 1111px;
+        background-position: 100% 50%;
+    }
 }
