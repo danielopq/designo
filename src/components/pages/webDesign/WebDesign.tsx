@@ -1,6 +1,6 @@
 import './webDesign.scss';
 
-import { SectionHeader } from '../../layout';
+import { SectionHeader, ProjectsNavBar } from '../../layout';
 
 const WebDesign: React.FC = () => {
     return (
@@ -9,6 +9,7 @@ const WebDesign: React.FC = () => {
                 title='Web Design'
                 text='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
             />
+            <ProjectsNavBar />
         </main>
     )
 }

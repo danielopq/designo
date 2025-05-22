@@ -1,0 +1,28 @@
+@use '../../../assets/scss/breakpoints';
+
+#projectsNavBar {
+    width: 100vw;
+    height: 798px;
+    padding: 0px 24px;
+    border: solid 1px red;
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #projectsNavBar {
+        max-width: 768px;
+        height: 649px;
+        padding: 0px 40px;
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #projectsNavBar {
+        max-width: 1111px;
+        height: 640px;
+        padding: 0px;
+    }
+}
