@@ -1,6 +1,7 @@
 import './webDesign.scss';
 
 import { SectionHeader, ProjectsNavBar } from '../../layout';
+import { BtProjectsNavBar } from '../../ui';
 
 const WebDesign: React.FC = () => {
     return (
@@ -9,7 +10,10 @@ const WebDesign: React.FC = () => {
                 title='Web Design'
                 text='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
             />
-            <ProjectsNavBar />
+            <ProjectsNavBar>
+                <BtProjectsNavBar text='APP DESIGN' mobilePic='' tabletPic='' deskTopPic=''/>
+                <BtProjectsNavBar text='GRAPHIC DESIGN' mobilePic='' tabletPic='' deskTopPic=''/>
+            </ProjectsNavBar>
         </main>
     )
 }
