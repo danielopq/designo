@@ -13,13 +13,12 @@
         width: inherit;
         height: 320px;
         background-position: contain;
-        background-size: inherit;
+        background-size: 327px;
         background-repeat: no-repeat;
     }
 
     & div:last-of-type{
         width: inherit;
-        height: 100%;
         padding-top: 32px;
         display: flex;
         flex-direction: column;

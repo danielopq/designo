@@ -5,4 +5,4 @@ export { default as KeyValue } from "./keyValue/KeyValue";
 export { default as SectionHeader } from "./sectionHeader/SectionHeader";
 export { default as ProjectsNavBar } from "./projectsNavBar/ProjectsNavBar";
 export { default as ProjectsList } from "./projectsList/ProjectsList";
-export { default as ProjectView } from "./projectView/projectView";
+export { default as ProjectView } from "./projectView/ProjectView";

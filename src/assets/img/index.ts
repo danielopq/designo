@@ -19,5 +19,12 @@ export { default as passionatePic } from './home/illustration-passionate.svg';
 export { default as resourcefulPic } from './home/illustration-resourceful.svg';
 export { default as friendlyPic } from './home/illustration-friendly.svg';
 
+//########################## WEB DESIGN PROJECTS ##########################
 
+export { default as express } from './web-design/image-express.jpg';
+export { default as transfer } from './web-design/image-transfer.jpg';
+export { default as photon } from './web-design/image-photon.jpg';
+export { default as builder } from './web-design/image-builder.jpg';
+export { default as blogr } from './web-design/image-blogr.jpg';
+export { default as camp } from './web-design/image-camp.jpg';
 
