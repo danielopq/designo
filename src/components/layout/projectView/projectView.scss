@@ -1,7 +1,41 @@
 .projectView{
     width: 100%;
     height: 478px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 15px;
     overflow: hidden;
-    border: solid 1px blue;
+    text-align: center;
+    background-color: rgb(253,243,240);
+
+    .projectViewPic{
+        width: inherit;
+        height: 320px;
+        background-position: contain;
+        background-size: inherit;
+        background-repeat: no-repeat;
+    }
+
+    & div:last-of-type{
+        width: inherit;
+        height: 100%;
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectViewTitle{
+        width: 268px;
+        margin-bottom: 16px;
+        font: 500 20px/26px 'Jost-Medium';
+        letter-spacing: 5px;
+        color: var(--peach);
+    }
+
+    .defaultTextReg{
+        width: 268px;
+        color: rgb(51,49,54);
+    }
 }

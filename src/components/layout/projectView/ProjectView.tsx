@@ -1,8 +1,20 @@
 import './projectView.scss';
 
-const ProjectView:React.FC = ()=>{
-    return(
-        <article className='projectView'></article>
+type ProjectViewProps = {
+    pic: string;
+    title: string;
+    description: string;
+}
+
+const ProjectView: React.FC<ProjectViewProps> = ({ pic, title, description }) => {
+    return (
+        <article className='projectView'>
+            <div className='projectViewPic' style={{backgroundImage: pic}}></div>
+            <div>
+                <p className='projectViewTitle'>{title.toLocaleUpperCase()}</p>
+                <p className='defaultTextReg'>{description}</p>
+            </div>
+        </article>
     )
 }
 export default ProjectView;
