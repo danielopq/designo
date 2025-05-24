@@ -8,7 +8,7 @@ function App() {
     <>
       <TopNavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<WebDesign />} />
       </Routes>
       <WebFooter />
