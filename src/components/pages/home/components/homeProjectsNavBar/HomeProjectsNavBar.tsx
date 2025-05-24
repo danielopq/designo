@@ -1,7 +1,7 @@
 import './homeProjectsNavBar.scss';
 import { BtProjectsNavBar } from '../../../../ui';
 
-import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic, webMobilePic, webTabletPic, webDesktopLargePic } from '../../../../../../src/assets/img/shared';
+import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic, webMobilePic, webTabletPic, webDesktopLargePic } from '../../../../../assets/img';
 
 
 /**

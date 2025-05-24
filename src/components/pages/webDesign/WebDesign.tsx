@@ -3,7 +3,7 @@ import './webDesign.scss';
 import { SectionHeader, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
 
-import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic } from '../../../assets/img/shared'
+import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic } from '../../../assets/img'
 
 const WebDesign: React.FC = () => {
     return (

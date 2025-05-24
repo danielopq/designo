@@ -1,9 +1,6 @@
 import './values.scss';
 import { KeyValue } from '../../../../layout';
-
-import passionatePic from '../../../../../assets/img/home/illustration-passionate.svg';
-import resourcefulPic from '../../../../../assets/img/home/illustration-resourceful.svg';
-import friendlyPic from '../../../../../assets/img/home/illustration-friendly.svg';
+import { passionatePic, resourcefulPic, friendlyPic } from '../../../../../assets/img';
 
 /**
  * Renders the company values included on the home page.

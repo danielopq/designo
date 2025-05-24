@@ -1,0 +1,23 @@
+//########################## PROJECTS NAVEGATION BAR ##########################
+
+export { default as appMobilePic } from './shared/mobile/image-app-design.jpg';
+export { default as appTabletPic } from './shared/tablet/image-app-design.jpg';
+export { default as appDesktopPic } from './shared/desktop/image-app-design.jpg';
+
+export { default as graphicMobilePic } from './shared/mobile/image-graphic-design.jpg';
+export { default as graphicTabletPic } from './shared/tablet/image-graphic-design.jpg';
+export { default as graphicDesktopPic } from './shared/desktop/image-graphic-design.jpg';
+
+export { default as webMobilePic } from './shared/mobile/image-web-design.jpg';
+export { default as webTabletPic } from './shared/tablet/image-web-design.jpg';
+export { default as webDesktopSmallPic } from './shared/desktop/image-web-design-small.jpg';
+export { default as webDesktopLargePic } from './shared/desktop/image-web-design-large.jpg';
+
+//########################## HOME VALUES ##########################
+
+export { default as passionatePic } from './home/illustration-passionate.svg';
+export { default as resourcefulPic } from './home/illustration-resourceful.svg';
+export { default as friendlyPic } from './home/illustration-friendly.svg';
+
+
+
