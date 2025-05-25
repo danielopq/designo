@@ -10,7 +10,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ pic, title, description }) =>
     return (
         <article className='projectView'>
             <div className='projectViewPic' style={{backgroundImage: `url(${pic})`}}></div>
-            <div>
+            <div className='projectContent'>
                 <p className='projectViewTitle'>{title.toLocaleUpperCase()}</p>
                 <p className='defaultTextReg'>{description}</p>
             </div>

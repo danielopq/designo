@@ -1,4 +1,6 @@
-.projectView{
+@use '../../../assets/scss/breakpoints';
+
+.projectView {
     width: 100%;
     height: 478px;
     display: flex;
@@ -7,9 +9,9 @@
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
-    background-color: rgb(253,243,240);
+    background-color: rgb(253, 243, 240);
 
-    .projectViewPic{
+    .projectViewPic {
         width: inherit;
         height: 320px;
         background-position: contain;
@@ -17,7 +19,7 @@
         background-repeat: no-repeat;
     }
 
-    & div:last-of-type{
+    .projectContent {
         width: inherit;
         padding-top: 32px;
         display: flex;
@@ -25,7 +27,7 @@
         align-items: center;
     }
 
-    .projectViewTitle{
+    .projectViewTitle {
         width: 268px;
         margin-bottom: 16px;
         font: 500 20px/26px 'Jost-Medium';
@@ -33,8 +35,26 @@
         color: var(--peach);
     }
 
-    .defaultTextReg{
+    .defaultTextReg {
         width: 268px;
-        color: rgb(51,49,54);
+        color: rgb(51, 49, 54);
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    .projectView {
+        height: 310px;
+        flex-direction: row;
+
+        .projectViewPic {
+            background-size: 338px;
+        }
+
+        .projectContent {
+            height: inherit;
+            padding-top: 108px;
+        }
     }
 }

@@ -1,4 +1,6 @@
-.projectsList{
+@use '../../../assets/scss/breakpoints';
+
+.projectsList {
     width: 100vw;
     max-width: 327px;
     display: flex;
@@ -6,4 +8,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    .projectsList {
+        max-width: 689px;
+        gap: 32px;
+    }
 }
