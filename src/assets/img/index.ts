@@ -21,6 +21,7 @@ export { default as friendlyPic } from './home/illustration-friendly.svg';
 
 //########################## WEB DESIGN PROJECTS ##########################
 
+export { default as webDesignBg } from'./web-design/bg-pattern-intro-web.svg';
 export { default as express } from './web-design/image-express.jpg';
 export { default as transfer } from './web-design/image-transfer.jpg';
 export { default as photon } from './web-design/image-photon.jpg';

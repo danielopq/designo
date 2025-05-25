@@ -9,7 +9,10 @@
     align-items: center;
     color: white;
     text-align: center;
-    background: var(--peach) url(../../../assets/img/shared/pattern-mixed-circles-reflected.svg) 100% 0% / 876px no-repeat;
+    background-color: var(--peach);
+    background-position: 100% 0%;
+    background-size: 876px;
+    background-repeat: no-repeat;
 
     p {
         width: 100%;

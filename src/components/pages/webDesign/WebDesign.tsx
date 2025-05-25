@@ -3,12 +3,13 @@ import './webDesign.scss';
 import { SectionHeader, ProjectsList, ProjectView, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
 
-import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic,express,transfer,photon,builder,blogr,camp } from '../../../assets/img'
+import { webDesignBg, appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic,express,transfer,photon,builder,blogr,camp } from '../../../assets/img'
 
 const WebDesign: React.FC = () => {
     return (
         <main id="webDesign">
             <SectionHeader
+            backgroundImage={webDesignBg}
                 title='Web Design'
                 text='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
             />
