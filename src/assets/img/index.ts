@@ -32,5 +32,12 @@ export { default as camp } from './web-design/image-camp.jpg';
 //########################## APP DESIGN PROJECTS ##########################
 
 export { default as appDesignBg } from'./app-design/bg-pattern-intro-app.svg';
+export { default as airFilter } from './app-design/image-airfilter.jpg';
+export { default as eyeCam } from './app-design/image-eyecam.jpg';
+export { default as faceit } from './app-design/image-faceit.jpg';
+export { default as todo } from './app-design/image-todo.jpg';
+export { default as loopstudios } from './app-design/image-loopstudios.jpg';
 
 
+                
+                
