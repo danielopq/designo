@@ -29,3 +29,8 @@ export { default as builder } from './web-design/image-builder.jpg';
 export { default as blogr } from './web-design/image-blogr.jpg';
 export { default as camp } from './web-design/image-camp.jpg';
 
+//########################## APP DESIGN PROJECTS ##########################
+
+export { default as appDesignBg } from'./app-design/bg-pattern-intro-app.svg';
+
+

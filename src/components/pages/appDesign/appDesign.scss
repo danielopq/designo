@@ -1,0 +1,16 @@
+#appDesign{
+    width: 100vw;
+    max-width: 1440px;
+    margin-bottom: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projectsList{
+        margin-top: 96px;
+    }
+
+    #projectsNavBar{
+        margin-top: 96px;
+    }
+}
