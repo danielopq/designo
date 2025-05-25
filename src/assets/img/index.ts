@@ -38,6 +38,9 @@ export { default as faceit } from './app-design/image-faceit.jpg';
 export { default as todo } from './app-design/image-todo.jpg';
 export { default as loopstudios } from './app-design/image-loopstudios.jpg';
 
+//########################## GRAPHIC DESIGN PROJECTS ##########################
 
-                
-                
+export { default as graphicDesignBg } from'./graphic-design/bg-pattern-intro-graphic.svg';
+export { default as timBrown } from './graphic-design/image-tim-brown.jpg';
+export { default as boxedWater } from './graphic-design/image-boxed-water.jpg';
+export { default as science } from './graphic-design/image-science.jpg';
