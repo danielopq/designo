@@ -58,3 +58,26 @@
         }
     }
 }
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    .projectView {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .projectViewPic {
+            background-size: 350px;
+        }
+
+        .projectViewTitle {
+            width: 286px;
+        }
+
+        .defaultTextReg {
+            width: 286px;
+        }
+    }
+}

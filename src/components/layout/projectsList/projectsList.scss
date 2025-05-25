@@ -18,3 +18,15 @@
         gap: 32px;
     }
 }
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    .projectsList {
+        max-width: 1110px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
