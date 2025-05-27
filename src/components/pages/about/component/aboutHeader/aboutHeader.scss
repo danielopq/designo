@@ -1,0 +1,23 @@
+#aboutHeader {
+    width: 100vw;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    text-align: center;
+    border: solid 1px blue;
+
+    & div:first-of-type {
+        width: inherit;
+        height: 320px;
+        background: url('../../../../../assets/img/about/mobile/image-about-hero.jpg') top/cover no-repeat;
+    }
+
+    & div:last-of-type {
+        width: inherit;
+        height: auto;
+        p {
+            font: 400 15px/25px 'Jost-Regular';
+        }
+    }
+}

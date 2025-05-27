@@ -1,8 +1,12 @@
 import './about.scss';
 
-const About = () =>{
-    return(
-        <main id="about"></main>
+import { AboutHeader } from './component';
+
+const About = () => {
+    return (
+        <main id="about">
+            <AboutHeader />
+        </main>
     )
 }
 export default About;
