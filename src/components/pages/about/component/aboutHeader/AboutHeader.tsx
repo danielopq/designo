@@ -1,7 +1,5 @@
 import './aboutHeader.scss'
 
-
-
 /**
  * Displays the header section of the About Us page, including a title and description
  * about the company's background and mission.

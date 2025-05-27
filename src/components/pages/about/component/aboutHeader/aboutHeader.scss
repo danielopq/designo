@@ -1,9 +1,11 @@
+@use '../../../../../assets/scss/breakpoints';
+
 #aboutHeader {
     width: 100vw;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: var(--peach) url('../../../../../assets/img/about/mobile/bg-pattern-hero-about-mobile.svg')  100% 180px/ 876px no-repeat;
+    background: var(--peach) url('../../../../../assets/img/about/mobile/bg-pattern-hero-about-mobile.svg') 100% 180px/ 876px no-repeat;
 
     & div:first-of-type {
         width: inherit;
@@ -17,9 +19,9 @@
         padding-top: 80px;
         display: flex;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;
         color: white;
-        
+
         h1 {
             width: 327px;
         }
@@ -28,6 +30,38 @@
             width: 327px;
             margin-top: 24px;
             font: 400 15px/25px 'Jost-Regular';
+        }
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #aboutHeader {
+        max-width: 689px;
+        border-radius: 15px;
+        overflow: hidden;
+        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') -121px -109px/ 640px no-repeat;
+
+        & div:first-of-type {
+            max-width: 689px;
+            background: url('../../../../../assets/img/about/tablet/image-about-hero.jpg') top/cover no-repeat;
+        }
+
+        & div:last-of-type {
+            max-width: 689px;
+            height: 312px;
+            padding-top: 64px;
+
+            h1 {
+                width: 573px;
+            }
+
+            p {
+                width: 573px;
+                margin-top: 32px;
+                font: 400 16px/26px 'Jost-Regular';
+            }
         }
     }
 }
