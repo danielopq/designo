@@ -65,3 +65,38 @@
         }
     }
 }
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #aboutHeader {
+        max-width: 1111px;
+        flex-direction: row-reverse;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: left;
+        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') 0% -160px/ 640px no-repeat;
+
+        & div:first-of-type {
+            width: 476px;
+            height: 480px;
+            background: url('../../../../../assets/img/about/desktop/image-about-hero.jpg') top/cover no-repeat;
+        }
+
+        & div:last-of-type {
+            width: 635px;
+            height: 480px;
+            padding-top: 135px;
+
+            h1 {
+                width: 458px;
+            }
+
+            p {
+                width: 458px;
+                margin-top: 32px;
+                font: 400 16px/26px 'Jost-Regular';
+            }
+        }
+    }
+}
