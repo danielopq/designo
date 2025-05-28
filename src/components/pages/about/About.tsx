@@ -1,11 +1,12 @@
 import './about.scss';
 
-import { AboutHeader } from './component';
+import { AboutHeader, Talent } from './component';
 
 const About = () => {
     return (
         <main id="about">
             <AboutHeader />
+            <Talent />
         </main>
     )
 }

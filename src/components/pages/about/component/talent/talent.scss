@@ -1,0 +1,15 @@
+#talent{
+    width: 100vw;
+    height: 875px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px blue;
+
+    & div:first-of-type{
+        width: inherit;
+        height: 562px;
+        border: solid 1px green;
+    }
+
+}
