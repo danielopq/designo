@@ -1,15 +1,36 @@
-#talent{
+#talent {
     width: 100vw;
-    height: 875px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px blue;
+    text-align: center;
 
-    & div:first-of-type{
+    & div:first-of-type {
         width: inherit;
-        height: 562px;
-        border: solid 1px green;
+        height: 320px;
+        background: url('../../../../../assets/img/about/mobile/image-world-class-talent.jpg') top/contain no-repeat;
+    }
+
+    & div:last-of-type {
+        width: inherit;
+        height: 545px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') 0% 0% / 584px no-repeat;
+
+        & p:first-of-type {
+            width: 327px;
+            font: 500 32px/36px 'Jost-Medium';
+            color: var(--peach);
+        }
+
+        & p:last-of-type {
+            width: 327px;
+            margin-top: 24px;
+            color: rgb(51,49,54);
+        }
     }
 
 }
