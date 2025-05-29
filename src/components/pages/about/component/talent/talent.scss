@@ -58,11 +58,46 @@
 
             & p:first-of-type {
                 width: 572px;
-                font: 500 40px/48px 'Jost-Medium'; 
+                font: 500 40px/48px 'Jost-Medium';
             }
 
             & p:last-of-type {
                 width: 572px;
+            }
+        }
+
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #talent {
+        max-width: 1111px;
+        flex-direction: row;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: left;
+
+        & div:first-of-type {
+            max-width: 476px;
+            height: 640px;
+            background: url('../../../../../assets/img/about/desktop/image-world-class-talent.jpg') top/contain no-repeat;
+        }
+
+        & div:last-of-type {
+            max-width: 635px;
+            height: 640px;
+            padding-top: 154px;
+            background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') -146px 56px / 584px no-repeat;
+
+            & p:first-of-type {
+                width: 445px;
+                font: 500 40px/48px 'Jost-Medium';
+            }
+
+            & p:last-of-type {
+                width: 445px;
             }
         }
 
