@@ -2,11 +2,16 @@ import './locationItem.scss';
 
 import { BtRegular } from '../../ui';
 
-const LocationItem = () => {
+type LocationItemProps = {
+    locationName: string;
+    locationPic: string;
+}
+
+const LocationItem:React.FC<LocationItemProps> = ({locationName, locationPic}) => {
     return (
         <div className='locationItem'>
-            <div></div>
-            <p>CANADA</p>
+            <div style={{backgroundImage:`url(${locationName})`}}></div>
+            <p>{locationName.toLocaleUpperCase()}</p>
             <BtRegular text='SEE LOCATION' btType='orangeBg' />
         </div>
     )
