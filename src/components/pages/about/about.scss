@@ -2,10 +2,14 @@
 
 #about {
     width: 100vw;
-    height: 2000px;
+    margin-bottom: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    #locationsNavBar {
+        margin-top: 120px;
+    }
 }
 
 //############################## TABLET VERSION ##############################
