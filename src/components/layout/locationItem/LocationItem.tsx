@@ -10,7 +10,7 @@ type LocationItemProps = {
 const LocationItem:React.FC<LocationItemProps> = ({locationName, locationPic}) => {
     return (
         <div className='locationItem'>
-            <div style={{backgroundImage:`url(${locationName})`}}></div>
+            <div style={{backgroundImage:`url(${locationPic})`}}></div>
             <p>{locationName.toLocaleUpperCase()}</p>
             <BtRegular text='SEE LOCATION' btType='orangeBg' />
         </div>
