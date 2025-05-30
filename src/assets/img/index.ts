@@ -21,7 +21,7 @@ export { default as friendlyPic } from './home/illustration-friendly.svg';
 
 //########################## WEB DESIGN PROJECTS ##########################
 
-export { default as webDesignBg } from'./web-design/bg-pattern-intro-web.svg';
+export { default as webDesignBg } from './web-design/bg-pattern-intro-web.svg';
 export { default as express } from './web-design/image-express.jpg';
 export { default as transfer } from './web-design/image-transfer.jpg';
 export { default as photon } from './web-design/image-photon.jpg';
@@ -31,7 +31,7 @@ export { default as camp } from './web-design/image-camp.jpg';
 
 //########################## APP DESIGN PROJECTS ##########################
 
-export { default as appDesignBg } from'./app-design/bg-pattern-intro-app.svg';
+export { default as appDesignBg } from './app-design/bg-pattern-intro-app.svg';
 export { default as airFilter } from './app-design/image-airfilter.jpg';
 export { default as eyeCam } from './app-design/image-eyecam.jpg';
 export { default as faceit } from './app-design/image-faceit.jpg';
@@ -40,8 +40,14 @@ export { default as loopstudios } from './app-design/image-loopstudios.jpg';
 
 //########################## GRAPHIC DESIGN PROJECTS ##########################
 
-export { default as graphicDesignBg } from'./graphic-design/bg-pattern-intro-graphic.svg';
+export { default as graphicDesignBg } from './graphic-design/bg-pattern-intro-graphic.svg';
 export { default as timBrown } from './graphic-design/image-tim-brown.jpg';
 export { default as boxedWater } from './graphic-design/image-boxed-water.jpg';
 export { default as science } from './graphic-design/image-science.jpg';
+
+//########################## LOCATIONS NAVEGATION BAR ##########################
+
+export { default as australiaIlus } from './shared/illustration-australia.svg';
+export { default as canadaIlus } from './shared/illustration-canada.svg';
+export { default as ukIlus } from './shared/illustration-united-kingdom.svg';
 
