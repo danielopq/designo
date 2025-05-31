@@ -1,8 +1,8 @@
-import './talent.scss';
+import './aboutContent.scss';
 
-const Talent: React.FC = () => {
+const AboutContent: React.FC = () => {
     return (
-        <section id="talent">
+        <section id="aboutContent">
             <div></div>
             <div>
                 <p>World-class talent</p>
@@ -20,4 +20,4 @@ const Talent: React.FC = () => {
         </section>
     )
 }
-export default Talent;
+export default AboutContent;

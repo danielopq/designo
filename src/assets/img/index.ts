@@ -45,6 +45,10 @@ export { default as timBrown } from './graphic-design/image-tim-brown.jpg';
 export { default as boxedWater } from './graphic-design/image-boxed-water.jpg';
 export { default as science } from './graphic-design/image-science.jpg';
 
+//########################## ABOUT PAGE ##########################
+
+
+
 //########################## LOCATIONS NAVEGATION BAR ##########################
 
 export { default as australiaIlus } from './shared/illustration-australia.svg';

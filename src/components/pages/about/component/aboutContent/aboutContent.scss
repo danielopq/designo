@@ -1,6 +1,6 @@
 @use '../../../../../assets/scss/breakpoints';
 
-#talent {
+#aboutContent {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
 //############################## TABLET VERSION ##############################
 
 @include breakpoints.tablet {
-    #talent {
+    #aboutContent {
         max-width: 689px;
         border-radius: 15px;
         overflow: hidden;
@@ -72,7 +72,7 @@
 //############################## DESKTOP VERSION ##############################
 
 @include breakpoints.desktop {
-    #talent {
+    #aboutContent {
         max-width: 1111px;
         flex-direction: row;
         border-radius: 15px;
