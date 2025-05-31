@@ -1,8 +1,28 @@
-#locationsNavBar{
+@use '../../../assets/scss/breakpoints';
+
+#locationsNavBar {
     width: 100vw;
     height: 1188px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #locationsNavBar {
+        height: 1230px;
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #locationsNavBar {
+        max-width: 1111px;
+        height: 364px;
+        flex-direction: row;
+    }
 }

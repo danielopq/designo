@@ -17,6 +17,10 @@
 @include breakpoints.tablet {
     #about {
         #talent {
+            margin-top: 192px;
+        }
+
+        #locationsNavBar {
             margin-top: 120px;
         }
     }
@@ -27,6 +31,10 @@
 @include breakpoints.desktop {
     #about {
         #talent {
+            margin-top: 160px;
+        }
+
+        #locationsNavBar {
             margin-top: 160px;
         }
     }
