@@ -12,6 +12,5 @@ const LocationsNavBar: React.FC = () => {
             <LocationItem locationName='UNITED KINGDOM' locationPic={ukIlus} />
         </nav>
     )
-
 }
 export default LocationsNavBar;
