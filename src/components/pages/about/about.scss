@@ -8,7 +8,7 @@
     align-items: center;
 
     #locationsNavBar {
-        margin-top: 120px;
+        margin: 120px 0px;
     }
 }
 
@@ -16,8 +16,12 @@
 
 @include breakpoints.tablet {
     #about {
-        #talent {
-            margin-top: 120px;
+        #aboutHeader {
+            margin-bottom: 120px;
+        }
+
+        #locationsNavBar {
+            margin: 120px 0px;
         }
     }
 }
@@ -26,8 +30,12 @@
 
 @include breakpoints.desktop {
     #about {
-        #talent {
-            margin-top: 160px;
+        #aboutHeader {
+            margin-bottom: 160px;
+        }
+
+        #locationsNavBar {
+            margin: 160px 0px;
         }
     }
 }

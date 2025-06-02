@@ -7,13 +7,13 @@
     letter-spacing: 1px;
     transition: color 0.3s ease, background-color 0.3s ease;
 
-    .whiteBg {
+    &.whiteBg {
         background-color: white;
         color: var(--darkGrey);
     }
 
-    .orangeBg {
-        background-color: #E7816B;
+    &.orangeBg {
+        background-color: var(--peach);
     }
 
     @media(hover:hover) {

@@ -45,6 +45,16 @@ export { default as timBrown } from './graphic-design/image-tim-brown.jpg';
 export { default as boxedWater } from './graphic-design/image-boxed-water.jpg';
 export { default as science } from './graphic-design/image-science.jpg';
 
+//########################## ABOUT PAGE ##########################
+
+export { default as talentMobilePic } from './about/mobile/image-world-class-talent.jpg';
+export { default as talentTabletPic } from './about/tablet/image-world-class-talent.jpg';
+export { default as talentDesktopPic } from './about/desktop/image-world-class-talent.jpg';
+
+export { default as realDealMobilePic } from './about/mobile/image-real-deal.jpg';
+export { default as realDealTabletPic } from './about/tablet/image-real-deal.jpg';
+export { default as realDealDesktopPic } from './about/desktop/image-real-deal.jpg';
+
 //########################## LOCATIONS NAVEGATION BAR ##########################
 
 export { default as australiaIlus } from './shared/illustration-australia.svg';

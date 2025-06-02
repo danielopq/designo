@@ -1,6 +1,6 @@
 @use '../../../../../assets/scss/breakpoints';
 
-#talent {
+.aboutContent {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -8,9 +8,11 @@
     text-align: center;
 
     & div:first-of-type {
-        width: inherit;
+        width: 100vw;
         height: 320px;
-        background: url('../../../../../assets/img/about/mobile/image-world-class-talent.jpg') top/cover no-repeat;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     & div:last-of-type {
@@ -32,6 +34,7 @@
             width: 327px;
             margin-top: 24px;
             color: rgb(51, 49, 54);
+            font: 400 15px/25px 'Jost-Regular';
         }
     }
 
@@ -40,14 +43,15 @@
 //############################## TABLET VERSION ##############################
 
 @include breakpoints.tablet {
-    #talent {
+    .aboutContent {
         max-width: 689px;
         border-radius: 15px;
         overflow: hidden;
 
         & div:first-of-type {
             max-width: 689px;
-            background: url('../../../../../assets/img/about/tablet/image-world-class-talent.jpg') top/contain no-repeat;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         & div:last-of-type {
@@ -63,6 +67,7 @@
 
             & p:last-of-type {
                 width: 572px;
+                font: 400 16px/26px 'Jost-Regular';
             }
         }
 
@@ -72,7 +77,7 @@
 //############################## DESKTOP VERSION ##############################
 
 @include breakpoints.desktop {
-    #talent {
+    .aboutContent {
         max-width: 1111px;
         flex-direction: row;
         border-radius: 15px;
@@ -82,7 +87,8 @@
         & div:first-of-type {
             max-width: 476px;
             height: 640px;
-            background: url('../../../../../assets/img/about/desktop/image-world-class-talent.jpg') top/contain no-repeat;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         & div:last-of-type {
@@ -98,6 +104,7 @@
 
             & p:last-of-type {
                 width: 445px;
+                font: 400 16px/26px 'Jost-Regular';
             }
         }
 
