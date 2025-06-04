@@ -1,0 +1,21 @@
+.locationDetails {
+    width: 100vw;
+    height: 714px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px red;
+
+    .locationMap {
+        width: inherit;
+        height: 320px;
+        background-color: aqua;
+    }
+
+    .locationOffice {
+        width: inherit;
+        height: 394px;
+        background-color: bisque;
+    }
+}
