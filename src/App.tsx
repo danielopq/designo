@@ -8,13 +8,13 @@ function App() {
     <>
       <TopNavBar />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/webdesign" element={<WebDesign />} /> */}
-        {/* <Route path="/appdesign" element={<AppDesign />} /> */}
-        {/* <Route path="/graphicdesign" element={<GraphicDesign />} /> */}
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/locations" element={<Locations />} /> */}
-        <Route path="/" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/webdesign" element={<WebDesign />} />
+        <Route path="/appdesign" element={<AppDesign />} />
+        <Route path="/graphicdesign" element={<GraphicDesign />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <WebFooter />
     </>

@@ -1,8 +1,10 @@
 import './letsTalk.scss';
 
 import { BtRegular } from '../../../../ui';
+import { useLocation } from 'react-router-dom';
 
 const LetsTalk: React.FC = () => {
+     const location = useLocation();
     return (
         <section id="letsTalk">
             <div>
