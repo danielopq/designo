@@ -1,4 +1,4 @@
-import { Home, WebDesign, AppDesign, GraphicDesign, About, Locations } from "./components/pages";
+import { Home, WebDesign, AppDesign, GraphicDesign, About, Locations, Contact } from "./components/pages";
 import { WebFooter, TopNavBar } from "./components/layout";
 import { Route, Routes } from "react-router-dom";
 
@@ -13,7 +13,8 @@ function App() {
         {/* <Route path="/appdesign" element={<AppDesign />} /> */}
         {/* <Route path="/graphicdesign" element={<GraphicDesign />} /> */}
         {/* <Route path="/about" element={<About />} /> */}
-        <Route path="/" element={<Locations />} />
+        {/* <Route path="/locations" element={<Locations />} /> */}
+        <Route path="/" element={<Contact />} />
       </Routes>
       <WebFooter />
     </>
