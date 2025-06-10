@@ -11,7 +11,7 @@ const NavBar: React.FC<NavBarProps> = ({ navBarStyle }) => {
 
     return (
         <nav className='navBar'>
-            <BtNavegation text='OUR COMPANY' btStyle={navBarStyle} handleClick={() => { navigateTo('/') }} />
+            <BtNavegation text='OUR COMPANY' btStyle={navBarStyle} handleClick={() => { navigateTo('/about') }} />
             <BtNavegation text='LOCATIONS' btStyle={navBarStyle} handleClick={() => { navigateTo('/locations') }} />
             <BtNavegation text='CONTACT' btStyle={navBarStyle} handleClick={() => { navigateTo('/contact') }} />
         </nav>

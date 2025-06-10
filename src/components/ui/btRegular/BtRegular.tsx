@@ -3,6 +3,7 @@ import './btRegular.scss';
 type BtRegularProps = {
     text: string;
     btType: 'whiteBg' | 'orangeBg';
+    handleClick?: () => void;
 }
 
 /**
@@ -11,11 +12,12 @@ type BtRegularProps = {
  * @param {Object} props - Component props
  * @param {string} props.text - The text displayed on the button
  * @param {'whiteBg' | 'orangeBg'} props.btType - Defines the background color of the button
+ * @param {function} props.handleClick - Function triggered on button click
  * @returns {React.JSX.Element} The rendered BtRegular component
  */
-const BtRegular: React.FC<BtRegularProps> = ({ text, btType }) => {
+const BtRegular: React.FC<BtRegularProps> = ({ text, btType, handleClick }) => {
     return (
-        <button className={'btRegular ' + btType}>{text.toUpperCase()}</button>
+        <button className={'btRegular ' + btType} onClick={handleClick}>{text.toUpperCase()}</button>
     )
 }
 export default BtRegular;

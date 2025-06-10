@@ -1,6 +1,7 @@
 import './homeHeader.scss';
 
 import { BtRegular } from '../../../../ui';
+import { useWebNavigation } from '../../../../../utils/webNavigation';
 
 /**
  * Renders the header displayed at the top of the Home page.
@@ -8,6 +9,8 @@ import { BtRegular } from '../../../../ui';
  * @returns {React.JSX.Element} The HomeHeader component.
  */
 const HomeHeader: React.FC = () => {
+    const { navigateTo } = useWebNavigation();
+
     return (
         <header id="homeHeader">
             <h1>Award-winning custom designs and digital branding solutions</h1>
@@ -16,7 +19,7 @@ const HomeHeader: React.FC = () => {
                 fully responsive websites, app design, and engaging brand experiences.
                 Find out more about our services.
             </p>
-            <BtRegular text='LEARN MORE' btType='whiteBg' />
+            <BtRegular text='LEARN MORE' btType='whiteBg' handleClick={()=>navigateTo('/about')}/>
 
         </header>
     )
