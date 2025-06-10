@@ -7,4 +7,5 @@ export { default as ProjectsNavBar } from "./projectsNavBar/ProjectsNavBar";
 export { default as ProjectsList } from "./projectsList/ProjectsList";
 export { default as ProjectView } from "./projectView/ProjectView";
 export { default as LocationsNavBar } from "./locationsNavBar/LocationsNavBar";
-export  {default as LocationItem} from "./locationItem/LocationItem";
+export { default as LocationItem } from "./locationItem/LocationItem";
+export { default as Map } from "./map/Map";

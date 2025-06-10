@@ -2,6 +2,8 @@
   "offices": [
     {
       "country": "Canada",
+      "latitude": -30.32937344780903,
+      "longitude": 149.78820245397543,
       "branch": "Designo Central Office",
       "firstLineAdd": "3886 Wellington Street",
       "secondLineAdd": "Toronto, Ontario M9C 3J5",
@@ -10,6 +12,8 @@
     },
     {
       "country": "Australia",
+      "latitude": -30.32937344780903,
+      "longitude": 149.78820245397543,
       "branch": "Designo AU Office",
       "firstLineAdd": "19 Balonne Street",
       "secondLineAdd": "New South Wales 2443",
@@ -18,6 +22,8 @@
     },
     {
       "country": "United Kingdom",
+      "latitude": -30.32937344780903,
+      "longitude": 149.78820245397543,
       "branch": "Designo UK Office",
       "firstLineAdd": "13  Colorado Way",
       "secondLineAdd": "Rhyd-y-fro SA8 9GA",

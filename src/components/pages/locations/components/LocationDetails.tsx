@@ -1,7 +1,10 @@
 import './locationDetails.scss';
+import { Map } from '../../../layout';
 
 type LocationDetailsProps = {
     index: number;
+    latitude:number;
+    longitude:number;
     country: string;
     branch: string;
     firstLineAdd: string;
@@ -26,10 +29,13 @@ type LocationDetailsProps = {
  * 
  * @returns {JSX.Element} The rendered location details component
  */
-const LocationDetails:React.FC<LocationDetailsProps> = ({index,country,branch,firstLineAdd,secondLineAdd,phone,email}) => {
+const LocationDetails:React.FC<LocationDetailsProps> = ({index,latitude,longitude,country,branch,firstLineAdd,secondLineAdd,phone,email}) => {
     return (
         <div className={'locationDetails' + ((index % 2 == 0) ? ' reverse' : '')}>
-            <div className='locationMap'></div>
+            <div className='locationMap'>
+                <Map latitude={latitude} longitude={longitude}/> 
+                {/* <Map latitude={-30.32937344780903} longitude={149.78820245397543}/>  */}
+            </div>
             <div className='locationOffice'>
                 <h1 className='LocationCountry'>{country}</h1>
                 <div className='detailsCont'>
