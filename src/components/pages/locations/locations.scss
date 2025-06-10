@@ -1,4 +1,6 @@
-#locations{
+@use '../../../assets/scss/breakpoints';
+
+#locations {
     width: 100vw;
     margin-bottom: 310px;
     display: flex;
@@ -6,4 +8,22 @@
     align-items: center;
     justify-content: space-between;
     row-gap: 40px;
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    #locations {
+        margin-bottom: 310px;
+        row-gap: 103px;
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #locations {
+        margin-bottom: 380px;
+        row-gap: 32px;
+    }
 }
