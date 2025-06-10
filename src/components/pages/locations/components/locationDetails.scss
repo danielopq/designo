@@ -56,7 +56,7 @@
         max-width: 689px;
         height: 683px;
 
-        & > div {
+        &>div {
             max-width: inherit;
             border-radius: 15px;
         }
@@ -78,6 +78,58 @@
                 height: 78px;
                 flex-direction: row;
                 align-items: flex-start;
+
+                &>div {
+                    width: 255px;
+                }
+
+                .detailsHeader {
+                    font: 700 16px/26px 'Jost-Bold';
+                }
+
+                .detailsLine {
+                    font: 400 16px/26px 'Jost-Regular';
+                }
+            }
+        }
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    .locationDetails {
+        max-width: 1110px;
+        height: 326px;
+        flex-direction: row;
+        align-items: left;
+        justify-content: space-between;
+        column-gap: 30px;
+
+        .locationMap {
+            width: 350px;
+            height: inherit;
+            flex-shrink: 0;
+            background-color: aqua;
+        }
+
+        .locationOffice {
+            width: 100%;
+            max-width: 730px;
+            height: inherit;
+            padding: 88px 0px 0px 95px;
+            align-items: flex-start;
+            background: rgb(253, 243, 240) url('../../../../assets/img/shared/bg-pattern-two-circles.svg') 0% 100% / 584px no-repeat;
+            text-align: left;
+
+            .detailsCont {
+                width: 100%;
+                max-width: 540px;
+                height: 78px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                color: rgb(51, 49, 54);
 
                 &>div {
                     width: 255px;
