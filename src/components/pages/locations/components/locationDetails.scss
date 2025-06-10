@@ -1,3 +1,5 @@
+@use '../../../../assets/scss/breakpoints';
+
 .locationDetails {
     width: 100vw;
     height: 714px;
@@ -39,8 +41,55 @@
                 font: 700 15px/25px 'Jost-Bold';
             }
 
-            .detailsLine{
+            .detailsLine {
                 font: 400 15px/25px 'Jost-Regular';
+            }
+        }
+    }
+}
+
+//############################## TABLET VERSION ##############################
+
+@include breakpoints.tablet {
+    .locationDetails {
+        width: 100vw;
+        max-width: 689px;
+        height: 683px;
+
+        & > div {
+            max-width: inherit;
+            border-radius: 15px;
+        }
+
+        .locationMap {
+            height: 326px;
+        }
+
+        .locationOffice {
+            height: 326px;
+            padding: 88px 74px 0px;
+            align-items: flex-start;
+            background: rgb(253, 243, 240) url('../../../../assets/img/shared/bg-pattern-two-circles.svg') 0% 100% / 584px no-repeat;
+            text-align: left;
+
+            .detailsCont {
+                width: 100%;
+                max-width: 540px;
+                height: 78px;
+                flex-direction: row;
+                align-items: flex-start;
+
+                &>div {
+                    width: 255px;
+                }
+
+                .detailsHeader {
+                    font: 700 16px/26px 'Jost-Bold';
+                }
+
+                .detailsLine {
+                    font: 400 16px/26px 'Jost-Regular';
+                }
             }
         }
     }
