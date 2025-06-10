@@ -4,6 +4,12 @@ import { useWebNavigation } from '../../../../../utils/webNavigation';
 import { BtRegular } from '../../../../ui';
 import { useLocation } from 'react-router-dom';
 
+/**
+ * Engagement section in the footer that encourages users to visit the contact page.
+ * Automatically hides when already on the contact page.
+ * 
+ * @returns {React.JSX.Element} - "Let's Talk" call-to-action section with navigation button
+ */
 const LetsTalk: React.FC = () => {
     const location = useLocation();
     const { navigateTo } = useWebNavigation();
