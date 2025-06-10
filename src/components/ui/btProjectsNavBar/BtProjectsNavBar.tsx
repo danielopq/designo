@@ -7,6 +7,7 @@ type BtProjectsNavBarProps = {
     tabletPic: string;
     deskTopPic: string;
     gridArea?: string;
+    handleClick?: () => void;
 }
 
 /**
@@ -17,11 +18,12 @@ type BtProjectsNavBarProps = {
  * @param {string} param0.mobilePic - mobile background image path for mobile viewports. 
  * @param {string} param0.tabletPic - tablet background image path for mobile viewports.
  * @param {string} param0.desktopPic - desktop background image path for mobile viewports.
- * @param {string} param0.gridArea -  Optional CSS grid-area name for layout positioning. 
+ * @param {string} param0.gridArea -  Optional CSS grid-area name for layout positioning.
+ * @param {function} props.handleClick - Function triggered on button click 
  * @returns {React.JSX.Element} - The rendered BtProjectsNavBar component
  */
 
-const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = '', mobilePic, tabletPic, deskTopPic }) => {
+const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = '', mobilePic, tabletPic, deskTopPic, handleClick }) => {
 
     const [backgroundImage, setBackgroundImage] = useState<string>('');
 
@@ -45,7 +47,7 @@ const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = ''
     };
 
     return (
-        <div className='btProjectsNavBar' style={{ gridArea: gridArea, backgroundImage: `url(${backgroundImage})` }}>
+        <div className='btProjectsNavBar' style={{ gridArea: gridArea, backgroundImage: `url(${backgroundImage})` }} onClick={handleClick}>
             <div className='btPNBcontent'>
                 <div className='btPNBtext'>
                     <p>{text}</p>
