@@ -18,6 +18,7 @@ const Locations: React.FC = () => {
             {data.offices.map((office: details, index: number) => (
                 <LocationDetails
                     key={index}
+                    index={index}
                     country={office.country}
                     branch={office.branch}
                     firstLineAdd={office.firstLineAdd}

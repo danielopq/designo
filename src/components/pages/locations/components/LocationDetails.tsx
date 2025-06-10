@@ -1,6 +1,7 @@
 import './locationDetails.scss';
 
 type LocationDetailsProps = {
+    index: number;
     country: string;
     branch: string;
     firstLineAdd: string;
@@ -9,9 +10,25 @@ type LocationDetailsProps = {
     email: string;
 }
 
-const LocationDetails:React.FC<LocationDetailsProps> = ({country,branch,firstLineAdd,secondLineAdd,phone,email}) => {
+
+/**
+ * Renders a component that displays details of one branch office of the company.
+ * Alternates layout direction based on index to create a zig-zag layout.
+ * 
+ * @param {Object} props - Props for LocationDetails component
+ * @param {number} props.index - Index number used to alternate layout direction (even = reversed)
+ * @param {string} props.country - Country name
+ * @param {string} props.branch - Name of the office branch
+ * @param {string} props.firstLineAdd - First line of the address
+ * @param {string} props.secondLineAdd - Second line of the address
+ * @param {string} props.phone - Contact phone number
+ * @param {string} props.email - Contact email address
+ * 
+ * @returns {JSX.Element} The rendered location details component
+ */
+const LocationDetails:React.FC<LocationDetailsProps> = ({index,country,branch,firstLineAdd,secondLineAdd,phone,email}) => {
     return (
-        <div className='locationDetails'>
+        <div className={'locationDetails' + ((index % 2 == 0) ? ' reverse' : '')}>
             <div className='locationMap'></div>
             <div className='locationOffice'>
                 <h1 className='LocationCountry'>{country}</h1>
