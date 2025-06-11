@@ -9,7 +9,7 @@ import { graphicDesignBg, appMobilePic, appTabletPic, appDesktopPic, webMobilePi
  * Component that renders the graphic design portfolio page.
  * Displays the company's graphic design related projects.
  * 
- * @returns {JSX.Element} The graphic portfolio page.
+ * @returns {JSX.Element} The graphic design portfolio page.
  */
 const GraphicDesign: React.FC = () => {
     const { navigateTo } = useWebNavigation();
