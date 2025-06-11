@@ -6,6 +6,13 @@ type NavBarProps = {
     navBarStyle: 'dark' | 'light';
 }
 
+/**
+ * Renders the main navigation bar of the website.
+ * 
+ * @param {Object} props
+ * @param {'dark' | 'light'} props.navBarStyle - Determines the visual style of the navigation buttons.
+ * @returns {JSX.Element} The navigation bar component.
+ */
 const NavBar: React.FC<NavBarProps> = ({ navBarStyle }) => {
     const { navigateTo } = useWebNavigation();
 
