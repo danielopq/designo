@@ -1,7 +1,7 @@
 import './contact.scss';
 
 import { LocationsNavBar } from '../../layout';
-import ContactForm from './components/ContactForm';
+import ContactForm from './components/contactForm/ContactForm';
 const Contact: React.FC = () => {
     return (
         <main id="contact">

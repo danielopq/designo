@@ -1,0 +1,49 @@
+#contactDetails {
+    width: 100vw;
+    height: 764px;
+    padding: 72px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--peach) url('../../../../assets/img/contact/bg-pattern-hero-contact-mobile.svg') -92px 0% / 876px no-repeat;
+    text-align: center;
+    color: white;
+
+    p {
+        width: 327px;
+        margin-top: 24px;
+        font: 400 15px/25px 'Jost-Regular';
+    }
+
+    &>div {
+        width: 327px;
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactFormTextField,
+    .contactFormTextArea {
+        width: inherit;
+        padding-right: 8px;
+        margin-bottom: 24px;
+        display: flex;
+        border-bottom: solid 1px white;
+    }
+
+    .contactFormTextField {
+        height: 38px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contactFormTextArea {
+        height: 102px;
+    }
+
+    .contactFormTextField:has(input:focus),
+    .contactFormTextArea:has(textarea:focus) {
+        border-bottom: solid 2px white;
+    }
+}
