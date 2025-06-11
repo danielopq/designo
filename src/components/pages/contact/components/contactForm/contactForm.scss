@@ -9,7 +9,7 @@
     text-align: center;
     color: white;
 
-    p {
+    &>p {
         width: 327px;
         margin-top: 24px;
         font: 400 15px/25px 'Jost-Regular';
@@ -21,25 +21,35 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        input {
+            height: 26px;
+        }
+
+        textarea {
+            height: 85px;
+            margin-bottom: 5px;
+            resize: none;
+        }
     }
 
     .contactFormTextField,
     .contactFormTextArea {
         width: inherit;
-        padding-right: 8px;
+        height: auto;
+        padding: 8px 0px 12px;
         margin-bottom: 24px;
         display: flex;
         border-bottom: solid 1px white;
     }
 
     .contactFormTextField {
-        height: 38px;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .contactFormTextArea {
-        height: 102px;
+        flex-direction: column;
     }
 
     .contactFormTextField:has(input:focus),

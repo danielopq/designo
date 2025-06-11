@@ -1,6 +1,8 @@
 import './contactForm.scss';
 import { BtRegular } from '../../../../ui';
 
+import FormError from '../formError/formError';
+
 const ContactForm = () => {
     return (
         <form id="contactForm">
@@ -15,22 +17,19 @@ const ContactForm = () => {
                 <div>
                     <div className='contactFormTextField'>
                         <input id="name" name="name" type="text" placeholder="Name" />
-                        <div className='error'>
-                            <p></p>
-                            <div></div>
-                        </div>
+                        <FormError errorMessage="Can't be empty" displayed={true}/>
                     </div>
                     <div className='contactFormTextField'>
                         <input id="email" name="email" type="text" placeholder="Email Address" />
-                        <div className='error'></div>
+                        <FormError errorMessage="Can't be empty" displayed={true}/>
                     </div>
                     <div className='contactFormTextField'>
                         <input id="phone" name="phone" type="text" placeholder="Phone" />
-                        <div className='error'></div>
+                        <FormError errorMessage="Can't be empty" displayed={true}/>
                     </div>
                     <div className='contactFormTextArea'>
                         <textarea id="message" name="message" placeholder="Your Message" />
-                        <div className='error'></div>
+                        <FormError errorMessage="Can't be empty" displayed={true}/>
                     </div>
                     <BtRegular text='SUBMIT' btType='whiteBg' />
                 </div>

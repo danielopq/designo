@@ -1,3 +1,22 @@
-.formError{
+.formError {
+    width: auto;
     height: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font: 500 12px/26px 'Jost-MediumItalic';
+
+    p {
+        width: 95px;
+        height: 26px;
+        text-align: right;
+    }
+
+    div {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        background: url('../../../../../assets/img/contact/icon-error.svg') center/20px no-repeat;
+    }
 }
