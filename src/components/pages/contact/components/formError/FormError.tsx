@@ -17,8 +17,8 @@ type FormErrorProps = {
 const FormError: React.FC<FormErrorProps> = ({errorMessage,displayed}) => {
     return (
         <div className='formError' style={{display: displayed ? 'flex' : 'none'}}>
-            <p></p>
-            <div>{errorMessage}</div>
+            <p>{errorMessage}</p>
+            <div></div>
         </div>
     )
 }
