@@ -1,11 +1,19 @@
 import './graphicDesign.scss';
 
+import { useWebNavigation } from '../../../utils/webNavigation';
 import { SectionHeader, ProjectsList, ProjectView, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
-
 import { graphicDesignBg, appMobilePic, appTabletPic, appDesktopPic, webMobilePic, webTabletPic, webDesktopSmallPic, timBrown, boxedWater, science, builder, blogr, camp } from '../../../assets/img'
 
+/**
+ * Component that renders the graphic design portfolio page.
+ * Displays the company's graphic design related projects.
+ * 
+ * @returns {JSX.Element} The graphic portfolio page.
+ */
 const GraphicDesign: React.FC = () => {
+    const { navigateTo } = useWebNavigation();
+
     return (
         <main id="graphicDesign">
             <SectionHeader
@@ -19,8 +27,20 @@ const GraphicDesign: React.FC = () => {
                 <ProjectView pic={science} title='SCIENCE!' description='A poster made in collaboration with the Federal Art Project' />
             </ProjectsList>
             <ProjectsNavBar>
-                <BtProjectsNavBar text='APP DESIGN' mobilePic={appMobilePic} tabletPic={appTabletPic} deskTopPic={appDesktopPic} />
-                <BtProjectsNavBar text='WEB DESIGN' mobilePic={webMobilePic} tabletPic={webTabletPic} deskTopPic={webDesktopSmallPic} />
+                <BtProjectsNavBar
+                    text='APP DESIGN'
+                    mobilePic={appMobilePic}
+                    tabletPic={appTabletPic}
+                    deskTopPic={appDesktopPic}
+                    handleClick={() => { navigateTo('/appdesign') }}
+                />
+                <BtProjectsNavBar
+                    text='WEB DESIGN'
+                    mobilePic={webMobilePic}
+                    tabletPic={webTabletPic}
+                    deskTopPic={webDesktopSmallPic}
+                    handleClick={() => { navigateTo('/webdesign') }}
+                />
             </ProjectsNavBar>
         </main>
     )
