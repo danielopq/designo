@@ -11,13 +11,15 @@
     text-align: center;
     color: white;
 
-    &>p {
-        width: 327px;
-        margin-top: 24px;
-        font: 400 15px/25px 'Jost-Regular';
+    &>div:first-child {
+        p {
+            width: 327px;
+            margin-top: 24px;
+            font: 400 15px/25px 'Jost-Regular';
+        }
     }
 
-    &>div {
+    &>div:last-child {
         width: 327px;
         margin-top: 48px;
         display: flex;
@@ -37,19 +39,56 @@
         text-align: left;
         border-radius: 15px;
 
-        & h1 {
-            width: 100%;
+        &>div:first-child {
+            h1 {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                margin-top: 32px;
+                font: 400 16px/26px 'Jost-Regular';
+            }
         }
 
-        &>p {
-            width: 100%;
-            margin-top: 32px;
-            font: 400 16px/26px 'Jost-Regular';
-        }
-
-        &>div {
+        &>div:last-child {
             width: 100%;
             margin-top: 40px;
+            align-items: flex-end;
+        }
+    }
+}
+
+//############################## DESKTOP VERSION ##############################
+
+@include breakpoints.desktop {
+    #contactDetails {
+        max-width: 1111px;
+        height: 480px;
+        padding: 0px 95px 0px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: var(--peach) url('../../../../assets/img/contact/bg-pattern-hero-contact-mobile.svg') -92px 0% / 876px no-repeat;
+        text-align: left;
+        border-radius: 15px;
+
+        &>div:first-child {
+            h1 {
+                width: 100%;
+                margin-top: 135px;
+            }
+
+            p {
+                width: 445px;
+                margin-top: 32px;
+                font: 400 16px/26px 'Jost-Regular';
+            }
+        }
+
+        &>div:last-child {
+            width: 380px;
+            margin-top: 55px;
             align-items: flex-end;
         }
     }

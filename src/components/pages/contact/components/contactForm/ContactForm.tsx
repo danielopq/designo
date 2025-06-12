@@ -19,18 +19,20 @@ const ContactForm = () => {
     return (
         <form id="contactForm" onSubmit={handleSubmit}>
             <section id="contactDetails">
-                <h1>Contact US</h1>
-                <p>
-                    Ready to take it to the next level? Let’s talk about your
-                    project or idea and find out how we can help your business
-                    grow. If you are looking for unique digital experiences
-                    that’s relatable to your users, drop us a line.
-                </p>
                 <div>
-                    <FormField fieldType='formTextField' fieldId='name' placeholder='name' errorMessage={name} ariaLabel='name'/>
-                    <FormField fieldType='formTextField' fieldId='email' placeholder='Email Address' errorMessage={email} ariaLabel='email'/>
-                    <FormField fieldType='formTextField' fieldId='phone' placeholder='Phone' errorMessage={phone} ariaLabel='phone'/>
-                    <FormField fieldType='formTextArea' fieldId='message' placeholder='Your Message' errorMessage={message} ariaLabel='message'/>
+                    <h1>Contact US</h1>
+                    <p>
+                        Ready to take it to the next level? Let’s talk about your
+                        project or idea and find out how we can help your business
+                        grow. If you are looking for unique digital experiences
+                        that’s relatable to your users, drop us a line.
+                    </p>
+                </div>
+                <div>
+                    <FormField fieldType='formTextField' fieldId='name' placeholder='name' errorMessage={name} ariaLabel='name' />
+                    <FormField fieldType='formTextField' fieldId='email' placeholder='Email Address' errorMessage={email} ariaLabel='email' />
+                    <FormField fieldType='formTextField' fieldId='phone' placeholder='Phone' errorMessage={phone} ariaLabel='phone' />
+                    <FormField fieldType='formTextArea' fieldId='message' placeholder='Your Message' errorMessage={message} ariaLabel='message' />
                     <BtRegular text='SUBMIT' btType='whiteBg' />
                 </div>
             </section>
