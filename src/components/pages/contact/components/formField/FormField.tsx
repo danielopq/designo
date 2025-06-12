@@ -21,21 +21,14 @@ type FormFieldProps = {
  * @returns {JSX.Element} A form field with optional error display
  */
 const FormField: React.FC<FormFieldProps> = ({ fieldType, fieldId, placeholder, errorMessage, ariaLabel }) => {
-    if (fieldType === 'formTextField') {
-        return (
-            <div className={fieldType}>
-                <input id={fieldId} name={fieldId} type="text" placeholder={placeholder} aria-label={ariaLabel} />
-                <div className='formError' style={{ display: (errorMessage !== '') ? 'flex' : 'none' }}>
-                    <p>{errorMessage}</p>
-                    <div></div>
-                </div>
-            </div>
-        )
-    }
-
     return (
         <div className={fieldType}>
-            <textarea id={fieldId} name={fieldId} placeholder={placeholder} aria-label={ariaLabel} />
+            {fieldType === 'formTextField' ? (
+                <input id={fieldId} name={fieldId} type="text" placeholder={placeholder} aria-label={ariaLabel} />
+            ) : (
+                <textarea id={fieldId} name={fieldId} placeholder={placeholder} aria-label={ariaLabel} />
+            )}
+            
             <div className='formError' style={{ display: (errorMessage !== '') ? 'flex' : 'none' }}>
                 <p>{errorMessage}</p>
                 <div></div>
