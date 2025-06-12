@@ -5,6 +5,12 @@ import { useState } from 'react';
 
 type FormState = Record<string, string>;
 
+/**
+ * Renders the contact form section of the website.
+ * Includes multiple input fields and handles basic form state and submission.
+ *
+ * @returns {JSX.Element} A contact form component
+ */
 const ContactForm = () => {
     const initialFormState: FormState = { name: 'hello', email: 'ueee', phone: '', message: '' }
     const [formErrors, setFormErrors] = useState<FormState>(initialFormState);
