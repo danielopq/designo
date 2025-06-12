@@ -21,39 +21,5 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        input {
-            height: 26px;
-        }
-
-        textarea {
-            height: 85px;
-            margin-bottom: 5px;
-            resize: none;
-        }
-    }
-
-    .contactFormTextField,
-    .contactFormTextArea {
-        width: inherit;
-        height: auto;
-        padding: 8px 0px 12px;
-        margin-bottom: 24px;
-        display: flex;
-        border-bottom: solid 1px white;
-    }
-
-    .contactFormTextField {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .contactFormTextArea {
-        flex-direction: column;
-    }
-
-    .contactFormTextField:has(input:focus),
-    .contactFormTextArea:has(textarea:focus) {
-        border-bottom: solid 2px white;
     }
 }

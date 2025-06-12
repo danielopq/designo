@@ -1,11 +1,23 @@
 import './contactForm.scss';
 import { BtRegular } from '../../../../ui';
+import FormField from '../formField/FormField';
+import { useState } from 'react';
 
-import FormError from '../formError/formError';
+type FormState = Record<string, string>;
 
 const ContactForm = () => {
+    const initialFormState: FormState = { name: 'hello', email: 'ueee', phone: '', message: '' }
+    const [formErrors, setFormErrors] = useState<FormState>(initialFormState);
+    const { name, email, phone, message } = formErrors;
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const newFormErrors: FormState = { name: '', email: '', phone: '', message: '' }
+        setFormErrors(newFormErrors);
+    }
+
     return (
-        <form id="contactForm">
+        <form id="contactForm" onSubmit={handleSubmit}>
             <section id="contactDetails">
                 <h1>Contact US</h1>
                 <p>
@@ -15,22 +27,10 @@ const ContactForm = () => {
                     that’s relatable to your users, drop us a line.
                 </p>
                 <div>
-                    <div className='contactFormTextField'>
-                        <input id="name" name="name" type="text" placeholder="Name" />
-                        <FormError errorMessage="Can't be empty" displayed={true}/>
-                    </div>
-                    <div className='contactFormTextField'>
-                        <input id="email" name="email" type="text" placeholder="Email Address" />
-                        <FormError errorMessage="Can't be empty" displayed={true}/>
-                    </div>
-                    <div className='contactFormTextField'>
-                        <input id="phone" name="phone" type="text" placeholder="Phone" />
-                        <FormError errorMessage="Can't be empty" displayed={true}/>
-                    </div>
-                    <div className='contactFormTextArea'>
-                        <textarea id="message" name="message" placeholder="Your Message" />
-                        <FormError errorMessage="Can't be empty" displayed={true}/>
-                    </div>
+                    <FormField fieldType='formTextField' fieldId='name' placeholder='name' errorMessage={name} ariaLabel='name'/>
+                    <FormField fieldType='formTextField' fieldId='email' placeholder='Email Address' errorMessage={email} ariaLabel='email'/>
+                    <FormField fieldType='formTextField' fieldId='phone' placeholder='Phone' errorMessage={phone} ariaLabel='phone'/>
+                    <FormField fieldType='formTextArea' fieldId='message' placeholder='Your Message' errorMessage={message} ariaLabel='message'/>
                     <BtRegular text='SUBMIT' btType='whiteBg' />
                 </div>
             </section>
