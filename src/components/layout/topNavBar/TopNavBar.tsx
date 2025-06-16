@@ -1,6 +1,6 @@
 import './topNavBar.scss';
 import { useState } from 'react';
-import { NavBar } from '../../layout';
+import { NavBar, MobileNavbar } from '../../layout';
 import { BtHamburger, BtHomeLink } from '../../ui';
 
 const TopNavBar: React.FC = () => {
@@ -11,13 +11,18 @@ const TopNavBar: React.FC = () => {
     }
 
     return (
-        <div id="topNavBar">
-            <div>
-                <BtHomeLink BtType='darkLogo'/>
-                <NavBar navBarStyle='dark' />
-                <BtHamburger menuDeployed={mobileMenu} handleClick={handleClick} />
+        <>
+            <MobileNavbar displayed={mobileMenu}/>
+            <div id="topNavBar">
+                <div>
+                    <BtHomeLink BtType='darkLogo' />
+                    <NavBar navBarStyle='dark' />
+                    <BtHamburger menuDeployed={mobileMenu} handleClick={handleClick} />
+                </div>
             </div>
-        </div>
+
+        </>
+
     )
 }
 export default TopNavBar;
