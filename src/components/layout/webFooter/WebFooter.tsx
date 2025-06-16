@@ -1,6 +1,6 @@
 import './webFooter.scss';
 
-import { BtMedia } from '../../ui';
+import { BtMedia, BtHomeLink } from '../../ui';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
 
@@ -9,6 +9,7 @@ const WebFooter: React.FC = () => {
         <footer id="webFooter">
             <LetsTalk />
             <div id="topWebfooter">
+                <BtHomeLink BtType='lightLogo'/>
                 <NavBar navBarStyle='light' />
             </div>
             <div id="bottomWebfooter">
