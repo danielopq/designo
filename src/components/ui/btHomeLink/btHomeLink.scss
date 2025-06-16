@@ -1,0 +1,24 @@
+.btHomeLink {
+    width: 202px;
+    height: 27px;
+    background-color: transparent;
+    background-size: 202px;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+@media(hover:hover){
+    .btHomeLink:hover {
+        opacity: 0.3;
+    }
+}
+
+.darkLogo {
+    background-image: url('../../../assets/img/shared/logo-dark.png');
+}
+
+.lightLogo {
+    background-image: url('../../../assets/img/shared/logo-light.png');
+}
