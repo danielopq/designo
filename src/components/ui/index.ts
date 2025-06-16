@@ -4,3 +4,4 @@ export { default as BtMedia } from "./btMedia/BtMedia";
 export { default as BtRegular } from "./btRegular/BtRegular";
 export { default as BtProjectsNavBar } from "./btProjectsNavBar/BtProjectsNavBar";
 export { default as BtHomeLink } from "./btHomeLink/BtHomeLink";
+export { default as BtMobileNavBar } from "./btMobileNavBar/BtMobileNavBar";
