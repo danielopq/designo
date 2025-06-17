@@ -2,19 +2,24 @@ import './letsTalk.scss';
 
 import { useWebNavigation } from '../../../../../utils/webNavigation';
 import { BtRegular } from '../../../../ui';
-import { useLocation } from 'react-router-dom';
+
+type LetsTalkProps = {
+    displayed?: boolean;
+}
 
 /**
- * Engagement section in the footer that encourages users to visit the contact page.
- * Automatically hides when already on the contact page.
+ * A call-to-action section in the footer that encourages users to visit the contact page.
+ * This section is hidden when already on the contact page.
  * 
- * @returns {React.JSX.Element} - "Let's Talk" call-to-action section with navigation button
+ * @param {LetsTalkProps} props - Component props.
+ * @param {boolean} props.displayed - Determines whether the section should be hidden.
+ * @returns {JSX.Element} The rendered "Let’s Talk" section with a navigation button.
  */
-const LetsTalk: React.FC = () => {
-    const location = useLocation();
+const LetsTalk: React.FC<LetsTalkProps> = ({ displayed = true}) => {
+
     const { navigateTo } = useWebNavigation();
     return (
-        <section id="letsTalk" style={{display: location.pathname === '/contact' ? 'none' : 'flex'}}>
+        <section id="letsTalk" style={{display: displayed ? 'flex' : 'none'}}>
             <div>
                 <p>Let’s talk about your project</p>
                 <p>

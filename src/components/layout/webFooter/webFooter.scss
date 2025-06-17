@@ -3,7 +3,6 @@
 #webFooter {
     width: 100vw;
     max-width: 1440px;
-    height: 815px;
     padding-bottom: 24px;
     display: flex;
     flex-direction: column;
@@ -13,7 +12,6 @@
     #topWebfooter {
         width: 100%;
         max-width: 327px;
-        margin-top: 253px;
         height: 60px;
         display: inline-flex;
         align-items: flex-start;
@@ -52,6 +50,16 @@
             justify-content: space-between;
         }
     }
+}
+
+.largeFooter {
+    height: 815px;
+    padding-top: 253px;
+}
+
+.shortFooter {
+    height: 626px;
+    padding-top: 64px;
 }
 
 //############################## TABLET AND DESKTOP VERSION ##############################
@@ -96,12 +104,10 @@
 
 @include breakpoints.tablet {
     #webFooter {
-        height: 423px;
 
         #topWebfooter {
             max-width: 690px;
             height: 68px;
-            margin-top: 166px;
         }
 
         #bottomWebfooter {
@@ -113,18 +119,25 @@
             }
         }
     }
+
+    .largeFooter {
+        height: 423px;
+        padding-top: 166px;
+    }
+
+    .shortFooter {
+        height: 337px;
+        padding-top: 80px;
+    }
 }
 
 //############################## DESKTOP VERSION ##############################
 
 @include breakpoints.desktop {
     #webFooter {
-        height: 393px;
-
         #topWebfooter {
             max-width: 1111px;
             height: 68px;
-            margin-top: 144px;
         }
 
         #bottomWebfooter {
@@ -139,5 +152,15 @@
                 }
             }
         }
+    }
+
+    .largeFooter {
+        height: 393px;
+        padding-top: 144px;
+    }
+
+    .shortFooter {
+        height: 321px;
+        padding-top: 72px;
     }
 }

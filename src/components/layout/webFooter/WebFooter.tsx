@@ -4,6 +4,8 @@ import { BtMedia, BtHomeLink } from '../../ui';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
 import { useWebNavigation } from '../../../utils/webNavigation';
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 /**
  * Renders the footer section of the website, including the "Let’s Talk" component,
@@ -13,13 +15,18 @@ import { useWebNavigation } from '../../../utils/webNavigation';
  */
 const WebFooter: React.FC = () => {
 
-    const {navigateTo} = useWebNavigation();
+    const { navigateTo } = useWebNavigation();
+    const [letsTalkDisplayed, setLetsTalkDisplayed] = useState<boolean>(true);
+
+    useEffect(() => {
+        location.pathname !== '/contact' ? setLetsTalkDisplayed(true) : setLetsTalkDisplayed(false);
+    }, [location.pathname]);
 
     return (
-        <footer id="webFooter">
-            <LetsTalk />
+        <footer id="webFooter" className={letsTalkDisplayed ? 'largeFooter' : 'shortFooter'}>
+            <LetsTalk displayed={location.pathname !== '/contact'} />
             <div id="topWebfooter">
-                <BtHomeLink BtType='lightLogo' handleClick={()=>navigateTo('/')}/>
+                <BtHomeLink BtType='lightLogo' handleClick={() => navigateTo('/')} />
                 <NavBar navBarStyle='light' />
             </div>
             <div id="bottomWebfooter">
