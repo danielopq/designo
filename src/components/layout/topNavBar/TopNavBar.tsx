@@ -1,23 +1,30 @@
 import './topNavBar.scss';
+
 import { useTopNavBarEvents } from './utils/useTopNavBarEvents';
 import { NavBar, MobileNavbar } from '../../layout';
 import { BtHamburger, BtHomeLink } from '../../ui';
 
+
+/**
+ * Renders the top navigation bar of the website, including the home link,
+ * main navigation, hamburger menu, and mobile navigation menu.
+ * 
+ * @returns {JSX.Element} The rendered TopNavBar component.
+ */
 const TopNavBar: React.FC = () => {
-    const { mobileMenu, switchMobileMenu } = useTopNavBarEvents();
+    const { mobileMenuDisplayed, switchMobileMenu, onHomeLinkClick } = useTopNavBarEvents();
+
     return (
         <>
-            <MobileNavbar displayed={mobileMenu} switchMobileMenu={switchMobileMenu} />
             <div id="topNavBar">
                 <div>
-                    <BtHomeLink BtType='darkLogo' />
+                    <BtHomeLink BtType='darkLogo' handleClick={() => onHomeLinkClick()} />
                     <NavBar navBarStyle='dark' />
-                    <BtHamburger menuDeployed={mobileMenu} handleClick={switchMobileMenu} />
+                    <BtHamburger menuDeployed={mobileMenuDisplayed} handleClick={switchMobileMenu} />
                 </div>
             </div>
-
+            <MobileNavbar displayed={mobileMenuDisplayed} switchMobileMenu={switchMobileMenu} />
         </>
-
     )
 }
 export default TopNavBar;
