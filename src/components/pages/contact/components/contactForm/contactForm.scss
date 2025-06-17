@@ -1,5 +1,24 @@
 @use '../../../../../assets/scss/breakpoints';
 
+#sentConfirmation{
+    width: 100%;
+    height: 100%;
+    top:0;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    color: white;
+
+    p{
+        width: 327px;
+        margin: 150px 0px 50px;
+        font: 400 23px/40px 'Jost-Regular';
+    }
+}
+
 #contactDetails {
     width: 100vw;
     height: 764px;

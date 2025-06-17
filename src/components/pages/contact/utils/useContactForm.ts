@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type FormState = Record<string, string>;
 
@@ -11,9 +11,28 @@ type FormState = Record<string, string>;
  * @returns {object} Form submission handler and validation error messages for each field.
  */
 export const useContactForm = () => {
+    const formRef = useRef<HTMLFormElement>(null);
     const initialFormState: FormState = { nameError: '', emailError: '', phoneError: '', messageError: '' }
     const [formErrors, setFormErrors] = useState<FormState>(initialFormState);
     const { nameError, emailError, phoneError, messageError } = formErrors;
+    const [confirmationDisplayed, setConfirmationDisplayed] = useState<boolean>(false);
+
+    // Enables or disables website scrolling based on confirmation visibility
+    useEffect(() => {
+        if (confirmationDisplayed) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [confirmationDisplayed])
+
+    /**
+     * Toggles the visibility of the confirmation message/modal
+     * shown after successfully submitting the form.
+     */
+    const switchConfirmation = (): void => {
+        setConfirmationDisplayed(!confirmationDisplayed);
+    }
 
     /**
      * Checks if a text value is empty after trimming whitespace.
@@ -85,7 +104,12 @@ export const useContactForm = () => {
         const newFormErrors: FormState = { nameError: newNameError, emailError: newEmailError, phoneError: newPhoneError, messageError: newMessageError }
         setFormErrors(newFormErrors);
 
+        const hasErrors = Object.values(newFormErrors).some((error) => error !== '');
+
+        if (!hasErrors) {
+            switchConfirmation();
+        }
     }
 
-    return { handleSubmit, nameError, emailError, phoneError, messageError }
+    return { handleSubmit, switchConfirmation, formRef, confirmationDisplayed, nameError, emailError, phoneError, messageError }
 }

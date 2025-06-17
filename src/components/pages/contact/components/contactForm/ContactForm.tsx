@@ -12,11 +12,16 @@ import { useContactForm } from '../../utils/useContactForm';
  * @returns {JSX.Element} The contact form section with input validation.
  */
 const ContactForm:React.FC = () => {
-    const { handleSubmit, nameError, emailError, phoneError, messageError } = useContactForm();
+    const { handleSubmit, switchConfirmation, formRef, confirmationDisplayed, nameError, emailError, phoneError, messageError } = useContactForm();
+
+
     return (
         <>
-            <div id=""></div>
-            <form id="contactForm" onSubmit={handleSubmit}>
+            <div id="sentConfirmation" style={{display: confirmationDisplayed ? 'flex' : 'none'}}>
+                <p>Thank you! Your message has been sent. We will contact you shortly.</p>
+                <BtRegular text='ACCEPT' btType='whiteBg' handleClick={()=>switchConfirmation()}/>
+            </div>
+            <form ref={formRef} id="contactForm" onSubmit={handleSubmit}>
                 <section id="contactDetails">
                     <div>
                         <h1>Contact US</h1>
