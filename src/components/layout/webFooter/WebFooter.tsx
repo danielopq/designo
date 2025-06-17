@@ -3,13 +3,23 @@ import './webFooter.scss';
 import { BtMedia, BtHomeLink } from '../../ui';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
+import { useWebNavigation } from '../../../utils/webNavigation';
 
+/**
+ * Renders the footer section of the website, including the "Let’s Talk" component,
+ * navigation links, contact information, and social media icons.
+ * 
+ * @returns {JSX.Element} The rendered WebFooter component.
+ */
 const WebFooter: React.FC = () => {
+
+    const {navigateTo} = useWebNavigation();
+
     return (
         <footer id="webFooter">
             <LetsTalk />
             <div id="topWebfooter">
-                <BtHomeLink BtType='lightLogo'/>
+                <BtHomeLink BtType='lightLogo' handleClick={()=>navigateTo('/')}/>
                 <NavBar navBarStyle='light' />
             </div>
             <div id="bottomWebfooter">
