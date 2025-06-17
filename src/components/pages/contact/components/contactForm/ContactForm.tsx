@@ -3,7 +3,15 @@ import { BtRegular } from '../../../../ui';
 import FormField from '../formField/FormField';
 import { useContactForm } from '../../utils/useContactForm';
 
-const ContactForm = () => {
+/**
+ * Renders the contact form component of the website.
+ * 
+ * Includes input fields for name, email, phone, and message,
+ * and handles client-side validation using a custom hook.
+ *
+ * @returns {JSX.Element} The contact form section with input validation.
+ */
+const ContactForm:React.FC = () => {
     const { handleSubmit, nameError, emailError, phoneError, messageError } = useContactForm();
     return (
         <>
