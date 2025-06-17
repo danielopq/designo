@@ -28,7 +28,6 @@ const FormField: React.FC<FormFieldProps> = ({ fieldType, fieldId, placeholder, 
             ) : (
                 <textarea id={fieldId} name={fieldId} placeholder={placeholder} aria-label={ariaLabel} />
             )}
-            
             <div className='formError' style={{ display: (errorMessage !== '') ? 'flex' : 'none' }}>
                 <p>{errorMessage}</p>
                 <div></div>

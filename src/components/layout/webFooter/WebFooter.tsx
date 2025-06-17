@@ -4,7 +4,6 @@ import { BtMedia, BtHomeLink } from '../../ui';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
 import { useWebNavigation } from '../../../utils/webNavigation';
-import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 /**
