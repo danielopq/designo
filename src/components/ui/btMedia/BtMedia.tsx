@@ -14,9 +14,10 @@ type BtMediaProps = {
  * @returns {React.JSX.Element} - The rendered button element.
  */
 const BtMedia: React.FC<BtMediaProps> = ({ imagePath,ariaLabel }) => {
+    
     return (
         <button
-            className="mediaBt" style={{ maskImage: `url(${imagePath})`, WebkitMaskImage: `url(${imagePath})` }}
+            className="mediaBt" style={{ backgroundImage: `url(${imagePath})`}}
             aria-label={ariaLabel}
         ></button>
     )

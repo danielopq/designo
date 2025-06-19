@@ -1,6 +1,6 @@
 import './locations.scss';
 
-import data from '../../../assets/data/offices.json';
+import data from '../../../data/offices.json';
 import LocationDetails from './components/LocationDetails';
 
 type details = {
