@@ -15,7 +15,11 @@ type BtHamburgerProps = {
  */
 const BtHamburger: React.FC<BtHamburgerProps> = ({ menuDeployed, handleClick }) => {
     return (
-        <button className={menuDeployed ? 'btHamburger closeIcon' : 'btHamburger hamburgerIcon'} onClick={handleClick}></button>
+        <button
+            className={menuDeployed ? 'btHamburger closeIcon' : 'btHamburger hamburgerIcon'}
+            onClick={handleClick}
+            aria-label={menuDeployed ? 'close mobile menu' : 'open mobile menu'}>
+        </button>
     )
 }
 export default BtHamburger;

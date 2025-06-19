@@ -24,7 +24,7 @@ The website includes a fully validated contact form with client-side validation 
 
 ### Links
 
-- Live Site URL: [https://danielmartinez.co.uk/sunnyside]
+- Live Site URL: [https://danielmartinez-designo.netlify.app/]
 
 ## My process
 
