@@ -1,6 +1,6 @@
 import './appDesign.scss';
 
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 import { SectionHeader, ProjectsList, ProjectView, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
 import { appDesignBg, webMobilePic, webTabletPic, webDesktopSmallPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic, airFilter, eyeCam, faceit, todo, loopstudios } from '../../../assets/img'

@@ -1,6 +1,6 @@
 import './letsTalk.scss';
 
-import { useWebNavigation } from '../../../../../utils/webNavigation';
+import { useWebNavigation } from '../../../../../utils/useWebNavigation';
 import { BtRegular } from '../../../../ui';
 
 type LetsTalkProps = {

@@ -1,6 +1,6 @@
 import './homeProjectsNavBar.scss';
 import { BtProjectsNavBar } from '../../../../ui';
-import { useWebNavigation } from '../../../../../utils/webNavigation';
+import { useWebNavigation } from '../../../../../utils/useWebNavigation';
 import { appMobilePic, appTabletPic, appDesktopPic, graphicMobilePic, graphicTabletPic, graphicDesktopPic, webMobilePic, webTabletPic, webDesktopLargePic } from '../../../../../assets/img';
 
 

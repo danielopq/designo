@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useWebNavigation } from '../../../../utils/webNavigation';
+import { useWebNavigation } from '../../../../utils/useWebNavigation';
 
 /**
  * Hook that contains all the actions related to the top navigation bar of the website.

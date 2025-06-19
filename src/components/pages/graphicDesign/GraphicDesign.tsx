@@ -1,6 +1,6 @@
 import './graphicDesign.scss';
 
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 import { SectionHeader, ProjectsList, ProjectView, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
 import { graphicDesignBg, appMobilePic, appTabletPic, appDesktopPic, webMobilePic, webTabletPic, webDesktopSmallPic, timBrown, boxedWater, science, builder, blogr, camp } from '../../../assets/img'

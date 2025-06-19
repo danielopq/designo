@@ -1,7 +1,7 @@
 import './mobileNavbar.scss';
 
 import { BtMobileNavBar } from '../../ui';
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 
 type MobileNavbarProps = {
     displayed: boolean;

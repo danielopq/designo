@@ -1,7 +1,7 @@
 import './locationItem.scss';
 
 import { BtRegular } from '../../ui';
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 
 type LocationItemProps = {
     locationName: string;

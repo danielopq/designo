@@ -3,7 +3,7 @@ import './webFooter.scss';
 import { BtMedia, BtHomeLink } from '../../ui';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 import { useEffect, useState } from 'react';
 
 /**

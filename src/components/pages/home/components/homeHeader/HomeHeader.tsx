@@ -1,7 +1,7 @@
 import './homeHeader.scss';
 
 import { BtRegular } from '../../../../ui';
-import { useWebNavigation } from '../../../../../utils/webNavigation';
+import { useWebNavigation } from '../../../../../utils/useWebNavigation';
 
 /**
  * Renders the header displayed at the top of the Home page.

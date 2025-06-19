@@ -1,6 +1,6 @@
 import './navBar.scss';
 import { BtNavegation } from '../../ui';
-import { useWebNavigation } from '../../../utils/webNavigation';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 
 type NavBarProps = {
     navBarStyle: 'dark' | 'light';
