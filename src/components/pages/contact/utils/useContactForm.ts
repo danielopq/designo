@@ -106,7 +106,9 @@ export const useContactForm = () => {
 
         const hasErrors = Object.values(newFormErrors).some((error) => error !== '');
 
-        if (!hasErrors) {
+        if (!hasErrors && formRef.current) {
+            //formRef.current.submit();
+            formRef.current.reset();
             switchConfirmation();
         }
     }
