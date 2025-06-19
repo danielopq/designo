@@ -3,7 +3,7 @@ import './graphicDesign.scss';
 import { useWebNavigation } from '../../../utils/useWebNavigation';
 import { SectionHeader, ProjectsList, ProjectView, ProjectsNavBar } from '../../layout';
 import { BtProjectsNavBar } from '../../ui';
-import { graphicDesignBg, appMobilePic, appTabletPic, appDesktopPic, webMobilePic, webTabletPic, webDesktopSmallPic, timBrown, boxedWater, science, builder, blogr, camp } from '../../../assets/img'
+import { graphicDesignBg, appMobilePic, appTabletPic, appDesktopPic, webMobilePic, webTabletPic, webDesktopSmallPic, timBrown, boxedWater, science} from '../../../assets/img'
 
 /**
  * Component that renders the graphic design portfolio page.
