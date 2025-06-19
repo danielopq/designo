@@ -17,7 +17,9 @@ type BtRegularProps = {
  */
 const BtRegular: React.FC<BtRegularProps> = ({ text, btType, handleClick }) => {
     return (
-        <button className={'btRegular ' + btType} onClick={handleClick}>{text.toUpperCase()}</button>
+        <button className={'btRegular ' + btType} onClick={handleClick} aria-label={text}>
+            {text.toUpperCase()}
+        </button>
     )
 }
 export default BtRegular;

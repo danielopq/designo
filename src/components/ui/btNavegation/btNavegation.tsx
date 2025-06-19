@@ -16,7 +16,9 @@ type BtNavegationProps = {
  */
 const BtNavegation: React.FC<BtNavegationProps> = ({ text, btStyle, handleClick }) => {
     return (
-        <button className='btNavegation' style={{ color: (btStyle == 'dark') ? 'var(--darkGrey)' : 'white' }} onClick={handleClick}>{text.toUpperCase()}</button>
+        <button className='btNavegation' style={{ color: (btStyle == 'dark') ? 'var(--darkGrey)' : 'white' }} onClick={handleClick} aria-label={text}>
+            {text.toUpperCase()}
+        </button>
     )
 }
 export default BtNavegation;

@@ -42,11 +42,11 @@ const WebFooter: React.FC = () => {
                     </div>
                 </div>
                 <div id="webFooterMedia">
-                    <BtMedia imagePath='../src/assets/img/shared/icon-facebook.svg' />
-                    <BtMedia imagePath='../src/assets/img/shared/icon-youtube.svg' />
-                    <BtMedia imagePath='../src/assets/img/shared/icon-twitter.svg' />
-                    <BtMedia imagePath='../src/assets/img/shared/icon-pinterest.svg' />
-                    <BtMedia imagePath='../src/assets/img/shared/icon-instagram.svg' />
+                    <BtMedia imagePath='../src/assets/img/shared/icon-facebook.svg' ariaLabel='faceboob'/>
+                    <BtMedia imagePath='../src/assets/img/shared/icon-youtube.svg' ariaLabel='youtube'/>
+                    <BtMedia imagePath='../src/assets/img/shared/icon-twitter.svg' ariaLabel='twitter'/>
+                    <BtMedia imagePath='../src/assets/img/shared/icon-pinterest.svg' ariaLabel='pinterest'/>
+                    <BtMedia imagePath='../src/assets/img/shared/icon-instagram.svg' ariaLabel='intagram'/>
                 </div>
             </div>
         </footer>

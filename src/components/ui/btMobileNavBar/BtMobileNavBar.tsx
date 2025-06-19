@@ -2,7 +2,7 @@ import './btMobileNavBar.scss';
 
 type BtMobileNavBarProps = {
     text: string;
-    handleClick: ()=>void;
+    handleClick: () => void;
 }
 
 /**
@@ -12,9 +12,11 @@ type BtMobileNavBarProps = {
  * @param handleClick - Function to be called when the button is clicked.
  * @returns A styled button component for the mobile navigation bar.
  */
-const BtMobileNavBar:React.FC<BtMobileNavBarProps> = ({text,handleClick}) =>{
-    return(
-        <button className='btMobileNavBar' onClick={handleClick}>{text.toUpperCase()}</button>
+const BtMobileNavBar: React.FC<BtMobileNavBarProps> = ({ text, handleClick }) => {
+    return (
+        <button className='btMobileNavBar' onClick={handleClick} aria-label={text}>
+            {text.toUpperCase()}
+        </button>
     )
 }
 export default BtMobileNavBar;

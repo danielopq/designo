@@ -47,7 +47,7 @@ const BtProjectsNavBar: React.FC<BtProjectsNavBarProps> = ({ text, gridArea = ''
     };
 
     return (
-        <div className='btProjectsNavBar' style={{ gridArea: gridArea, backgroundImage: `url(${backgroundImage})` }} onClick={handleClick}>
+        <div className='btProjectsNavBar' style={{ gridArea: gridArea, backgroundImage: `url(${backgroundImage})` }} onClick={handleClick} aria-label={text}>
             <div className='btPNBcontent'>
                 <div className='btPNBtext'>
                     <p>{text}</p>

@@ -2,6 +2,7 @@ import './btMedia.scss';
 
 type BtMediaProps = {
     imagePath: string;
+    ariaLabel: string;
 }
 
 /**
@@ -9,12 +10,14 @@ type BtMediaProps = {
  *
  * @param {Object} props - Component props.
  * @param {string} props.imagePath - Public URL path to the SVG icon used as the mask image.
+ * @param {string} props.ariaLabel - Descriptive label for accessibility purposes.
  * @returns {React.JSX.Element} - The rendered button element.
  */
-const BtMedia: React.FC<BtMediaProps> = ({ imagePath }) => {
+const BtMedia: React.FC<BtMediaProps> = ({ imagePath,ariaLabel }) => {
     return (
         <button
             className="mediaBt" style={{ maskImage: `url(${imagePath})`, WebkitMaskImage: `url(${imagePath})` }}
+            aria-label={ariaLabel}
         ></button>
     )
 }
