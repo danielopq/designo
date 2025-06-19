@@ -18,9 +18,9 @@ The website includes a fully validated contact form with client-side validation 
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/sunnyside/blob/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/sunnyside/blob/main/screenshots/mobile.jpg]
-
+- [Home - Desktop version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
+- [Home - tablet version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
+- [Home - mobile version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
 
 ### Links
 
