@@ -18,9 +18,9 @@ The website includes a fully validated contact form with client-side validation 
 
 ### Screenshot
 
-- [Home - Desktop version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
-- [Home - tablet version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
-- [Home - mobile version:](https://github.com/danielopq/designo/blob/main/screenshots/home%20-%20desktop.png)
+- [Home - Desktop version:](https://github.com/danielopq/designo/blob/main/screenshots/home-desktop.png)
+- [Home - tablet version:](https://github.com/danielopq/designo/blob/main/screenshots/home-tablet.png)
+- [Home - mobile version:](https://github.com/danielopq/designo/blob/main/screenshots/home-mobile.png)
 
 ### Links
 
