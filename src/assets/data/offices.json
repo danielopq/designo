@@ -2,31 +2,31 @@
   "offices": [
     {
       "country": "Canada",
-      "latitude": -30.32937344780903,
-      "longitude": 149.78820245397543,
+      "latitude": 43.667938715764514,
+      "longitude": -79.39478598373078,
       "branch": "Designo Central Office",
-      "firstLineAdd": "3886 Wellington Street",
-      "secondLineAdd": "Toronto, Ontario M9C 3J5",
+      "firstLineAdd": "100 Queens Park",
+      "secondLineAdd": "Toronto, ON M5S 2C6",
       "phone": "+1 253-863-8967",
       "email": "contact@designo.co"
     },
     {
       "country": "Australia",
-      "latitude": -30.32937344780903,
-      "longitude": 149.78820245397543,
+      "latitude": -33.856628482269734,
+      "longitude": 151.2152591490728,
       "branch": "Designo AU Office",
-      "firstLineAdd": "19 Balonne Street",
-      "secondLineAdd": "New South Wales 2443",
+      "firstLineAdd": "Bennelong Point",
+      "secondLineAdd": "Sydney NSW 2000",
       "phone": "(02) 6720 9092",
       "email": "contact@designo.au"
     },
     {
       "country": "United Kingdom",
-      "latitude": -30.32937344780903,
-      "longitude": 149.78820245397543,
+      "latitude": 51.5194352561671, 
+      "longitude": -0.12695076340237402,
       "branch": "Designo UK Office",
-      "firstLineAdd": "13  Colorado Way",
-      "secondLineAdd": "Rhyd-y-fro SA8 9GA",
+      "firstLineAdd": "1 Great Russell St", 
+      "secondLineAdd": "London WC1B 3DG",
       "phone": "078 3115 1400",
       "email": "contact@designo.uk"
     }
