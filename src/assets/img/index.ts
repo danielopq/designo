@@ -61,3 +61,11 @@ export { default as australiaIlus } from './shared/illustration-australia.svg';
 export { default as canadaIlus } from './shared/illustration-canada.svg';
 export { default as ukIlus } from './shared/illustration-united-kingdom.svg';
 
+//########################## SOCIAL MEDIA ##########################
+
+export { default as facebookIcon } from './shared/icon-facebook.svg';
+export { default as youtubeIcon } from './shared/icon-youtube.svg';
+export { default as twitterIcon } from './shared/icon-twitter.svg';
+export { default as pinterestIcon } from './shared/icon-pinterest.svg';
+export { default as instagramIcon } from './shared/icon-instagram.svg';
+

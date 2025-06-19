@@ -1,10 +1,11 @@
 import './webFooter.scss';
 
+import { useEffect, useState } from 'react';
 import { BtMedia, BtHomeLink } from '../../ui';
+import { useWebNavigation } from '../../../utils/useWebNavigation';
 import LetsTalk from './components/letsTalk/LetsTalk';
 import NavBar from '../navBar/NavBar';
-import { useWebNavigation } from '../../../utils/useWebNavigation';
-import { useEffect, useState } from 'react';
+import {facebookIcon,youtubeIcon,twitterIcon,pinterestIcon,instagramIcon} from '../../../assets/img';
 
 /**
  * Renders the footer section of the website, including the "Let’s Talk" component,
@@ -42,11 +43,11 @@ const WebFooter: React.FC = () => {
                     </div>
                 </div>
                 <div id="webFooterMedia">
-                    <BtMedia imagePath='../src/assets/img/shared/icon-facebook.svg' ariaLabel='faceboob'/>
-                    <BtMedia imagePath='../src/assets/img/shared/icon-youtube.svg' ariaLabel='youtube'/>
-                    <BtMedia imagePath='../src/assets/img/shared/icon-twitter.svg' ariaLabel='twitter'/>
-                    <BtMedia imagePath='../src/assets/img/shared/icon-pinterest.svg' ariaLabel='pinterest'/>
-                    <BtMedia imagePath='../src/assets/img/shared/icon-instagram.svg' ariaLabel='intagram'/>
+                    <BtMedia imagePath={facebookIcon} ariaLabel='facebook'/>
+                    <BtMedia imagePath={youtubeIcon} ariaLabel='youtube'/>
+                    <BtMedia imagePath={twitterIcon} ariaLabel='twitter'/>
+                    <BtMedia imagePath={pinterestIcon} ariaLabel='pinterest'/>
+                    <BtMedia imagePath={instagramIcon} ariaLabel='intagram'/>
                 </div>
             </div>
         </footer>
