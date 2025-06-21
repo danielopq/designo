@@ -7,30 +7,10 @@
     background-position: center;
     transition: opacity 0.3s;
     border: none;
-    // background-image: url('../../../assets/img/shared/icon-facebook.svg');
+    
     @media(hover:hover){
         &:hover {
             opacity: 0.4;
         }
     }
 }
-
-
-// .mediaBt {
-//     width: 24px;
-//     height: 24px;
-//     background-color: #E7816B;
-//     -webkit-mask-size: 24px;
-//     mask-size: 24px;
-//     mask-repeat: no-repeat;
-//     -webkit-mask-repeat: no-repeat;
-//     mask-position: center;
-//     -webkit-mask-position: center;
-//     transition: background-color 0.3s;
-//     border: none;
-//     @media(hover:hover){
-//         &:hover {
-//             background-color: #FFAD9B;
-//         }
-//     }
-// }
