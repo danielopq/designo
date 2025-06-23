@@ -70,7 +70,6 @@
 
         #topWebfooter {
             max-width: 690px;
-            height: 68px;
             padding-top: 7px;
             display: inline-flex;
             justify-content: space-between;
@@ -87,8 +86,7 @@
             max-width: 690px;
             margin-top: 31px;
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+            align-items: flex-end;
             text-align: left;
 
             &>div:first-child {
@@ -135,9 +133,10 @@
 
 @include breakpoints.desktop {
     #webFooter {
+
         #topWebfooter {
             max-width: 1111px;
-            height: 68px;
+            height: 76px;
         }
 
         #bottomWebfooter {
@@ -156,7 +155,7 @@
 
     .largeFooter {
         height: 393px;
-        padding-top: 144px;
+        padding-top: 136px;
     }
 
     .shortFooter {

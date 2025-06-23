@@ -34,7 +34,6 @@ const LocationDetails:React.FC<LocationDetailsProps> = ({index,latitude,longitud
         <div className={'locationDetails' + ((index % 2 == 0) ? ' reverse' : '')}>
             <div className='locationMap'>
                 <Map latitude={latitude} longitude={longitude}/> 
-                {/* <Map latitude={-30.32937344780903} longitude={149.78820245397543}/>  */}
             </div>
             <div className='locationOffice'>
                 <h1 className='LocationCountry'>{country}</h1>

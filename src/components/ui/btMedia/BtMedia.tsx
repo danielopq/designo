@@ -19,6 +19,7 @@ const BtMedia: React.FC<BtMediaProps> = ({ imagePath,ariaLabel }) => {
         <button
             className="mediaBt" style={{ backgroundImage: `url(${imagePath})`}}
             aria-label={ariaLabel}
+            type='button'
         ></button>
     )
 }

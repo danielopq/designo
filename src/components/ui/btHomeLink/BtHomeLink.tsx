@@ -15,7 +15,7 @@ type BtHomeLinkProps = {
  */
 const BtHomeLink: React.FC<BtHomeLinkProps> = ({ BtType,handleClick }) => {
     return (
-        <button className={'btHomeLink ' + BtType} onClick={handleClick} aria-label='Home'></button>
+        <button className={'btHomeLink ' + BtType} onClick={handleClick} aria-label='Home' type='button'></button>
     )
 }
 export default BtHomeLink;

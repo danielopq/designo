@@ -14,7 +14,7 @@ type BtMobileNavBarProps = {
  */
 const BtMobileNavBar: React.FC<BtMobileNavBarProps> = ({ text, handleClick }) => {
     return (
-        <button className='btMobileNavBar' onClick={handleClick} aria-label={text}>
+        <button className='btMobileNavBar' onClick={handleClick} aria-label={text} type='button'>
             {text.toUpperCase()}
         </button>
     )

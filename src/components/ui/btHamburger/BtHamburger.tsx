@@ -18,6 +18,7 @@ const BtHamburger: React.FC<BtHamburgerProps> = ({ menuDeployed, handleClick }) 
         <button
             className={menuDeployed ? 'btHamburger closeIcon' : 'btHamburger hamburgerIcon'}
             onClick={handleClick}
+            type='button'
             aria-label={menuDeployed ? 'close mobile menu' : 'open mobile menu'}>
         </button>
     )
