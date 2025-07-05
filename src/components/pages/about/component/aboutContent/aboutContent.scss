@@ -9,7 +9,7 @@
 
     & div:first-of-type {
         width: 100vw;
-        height: 320px;
+        height: 32rem;
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -17,24 +17,24 @@
 
     & div:last-of-type {
         width: inherit;
-        height: 545px;
-        padding-top: 80px;
+        height: 54.5rem;
+        padding-top: 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') 0% 0% / 584px no-repeat;
+        background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') 0% 0% / 58.4rem no-repeat;
 
         & p:first-of-type {
-            width: 327px;
-            font: 500 32px/36px 'Jost-Medium';
+            width: 32.7rem;
+            font: 500 3.2rem/3.6rem 'Jost-Medium';
             color: var(--peach);
         }
 
         & p:last-of-type {
-            width: 327px;
-            margin-top: 24px;
+            width: 32.7rem;
+            margin-top: 2.4rem;
             color: rgb(51, 49, 54);
-            font: 400 15px/25px 'Jost-Regular';
+            font: 400 1.5rem/2.5rem 'Jost-Regular';
         }
     }
 
@@ -44,30 +44,30 @@
 
 @include breakpoints.tablet {
     .aboutContent {
-        max-width: 689px;
-        border-radius: 15px;
+        max-width: 68.9rem;
+        border-radius: 1.5rem;
         overflow: hidden;
 
         & div:first-of-type {
-            max-width: 689px;
+            max-width: 68.9rem;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         & div:last-of-type {
-            max-width: 689px;
-            height: 416px;
-            padding-top: 68px;
-            background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') 94px -212px / 584px no-repeat;
+            max-width: 68.9rem;
+            height: 41.6rem;
+            padding-top: 6.8rem;
+            background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') 9.4rem -21.2rem / 58.4rem no-repeat;
 
             & p:first-of-type {
-                width: 572px;
-                font: 500 40px/48px 'Jost-Medium';
+                width: 57.2rem;
+                font: 500 4.0rem/4.8rem 'Jost-Medium';
             }
 
             & p:last-of-type {
-                width: 572px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 57.2rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
 
@@ -78,33 +78,33 @@
 
 @include breakpoints.desktop {
     .aboutContent {
-        max-width: 1111px;
+        max-width: 111.1rem;
         flex-direction: row;
-        border-radius: 15px;
+        border-radius: 1.5rem;
         overflow: hidden;
         text-align: left;
 
         & div:first-of-type {
-            max-width: 476px;
-            height: 640px;
+            max-width: 47.6rem;
+            height: 64rem;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         & div:last-of-type {
-            max-width: 635px;
-            height: 640px;
-            padding-top: 154px;
-            background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') -146px 56px / 584px no-repeat;
+            max-width: 63.5rem;
+            height: 64rem;
+            padding-top: 15.4rem;
+            background: rgb(253, 243, 240) url('../../../../../assets/img/shared/bg-pattern-three-circles.svg') -14.6rem 5.6rem / 58.4rem no-repeat;
 
             & p:first-of-type {
-                width: 445px;
-                font: 500 40px/48px 'Jost-Medium';
+                width: 44.5rem;
+                font: 500 4rem/4.8rem 'Jost-Medium';
             }
 
             & p:last-of-type {
-                width: 445px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 44.5rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
 
