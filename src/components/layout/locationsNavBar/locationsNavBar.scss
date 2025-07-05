@@ -2,7 +2,7 @@
 
 #locationsNavBar {
     width: 100vw;
-    height: 1188px;
+    height: 118.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
 
 @include breakpoints.tablet {
     #locationsNavBar {
-        height: 1230px;
+        height: 123rem;
     }
 }
 
@@ -21,8 +21,8 @@
 
 @include breakpoints.desktop {
     #locationsNavBar {
-        max-width: 1111px;
-        height: 364px;
+        max-width: 111rem;
+        height: 36.4rem;
         flex-direction: row;
     }
 }
