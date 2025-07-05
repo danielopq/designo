@@ -2,12 +2,12 @@
 
 #topNavBar {
     width: 100vw;
-    height: 96px;
-    padding: 35px 24px 0px;
+    height: 9.6rem;
+    padding: 3.5rem 2.4rem 0;
 
     &>div {
         width: 100%;
-        height: 27px;
+        height: 2.7rem;
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
@@ -24,8 +24,8 @@
 
 @include breakpoints.tabletAndDesktop {
     #topNavBar {
-        height: 155px;
-        padding: 0px;
+        height: 15.5rem;
+        padding: 0;
 
         &>div {
             nav.navBar {
@@ -39,8 +39,8 @@
 
 @include breakpoints.tabletAndDesktop {
     #topNavBar {
-        max-width: 768px;
-        padding: 64px 40px 0px;
+        max-width: 76.8rem;
+        padding: 6.4rem 4rem 0;
     }
 }
 
@@ -48,7 +48,7 @@
 
 @include breakpoints.desktop {
     #topNavBar {
-        max-width: 1111px;
-        padding: 64px 0px 0px;
+        max-width: 111.1rem;
+        padding: 6.4rem 0 0;
     }
 }
