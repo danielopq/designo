@@ -1,8 +1,8 @@
 @use '../../../../../styles/breakpoints';
 
 #values {
-    width: 327px;
-    height: 1396px;
+    width: 32.7rem;
+    height: 139.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,8 +12,8 @@
 
 @include breakpoints.tablet {
     #values {
-        width: 689px;
-        height: 670px;
+        width: 68.9rem;
+        height: 67rem;
     }
 }
 
@@ -21,8 +21,8 @@
 
 @include breakpoints.desktop {
     #values {
-        width: 1110px;
-        height: 412px;
+        width: 111rem;
+        height: 41.2rem;
         flex-direction: row;
     }
 }
