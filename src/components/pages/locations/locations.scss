@@ -2,20 +2,20 @@
 
 #locations {
     width: 100vw;
-    margin-bottom: 310px;
+    margin-bottom: 31rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    row-gap: 40px;
+    row-gap: 4rem;
 }
 
 //############################## TABLET VERSION ##############################
 
 @include breakpoints.tablet {
     #locations {
-        margin-bottom: 310px;
-        row-gap: 103px;
+        margin-bottom: 31rem;
+        row-gap: 10.3rem;
     }
 }
 
@@ -23,7 +23,7 @@
 
 @include breakpoints.desktop {
     #locations {
-        margin-bottom: 380px;
-        row-gap: 32px;
+        margin-bottom: 38rem;
+        row-gap: 3.2rem;
     }
 }
