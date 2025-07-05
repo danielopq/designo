@@ -1,11 +1,11 @@
 @use '../../../../../styles/breakpoints';
 
 #letsTalk {
-    width: 327px;
-    height: 379px;
-    margin-top: -443px;
-    padding: 64px 0px;
-    border-radius: 15px;
+    width: 32.7rem;
+    height: 37.9rem;
+    margin-top: -44.3rem;
+    padding: 6.4rem 0;
+    border-radius: 1.5rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -13,22 +13,22 @@
     justify-content: space-between;
     text-align: center;
     color: white;
-    background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -240px 50%/876px 584px no-repeat;
+    background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -24rem 50%/87.6rem 58.4rem no-repeat;
 
     div {
-        width: 279px;
-        height: 163px;
+        width: 27.9rem;
+        height: 16.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
         p:first-of-type {
-            font: 500 32px/36px 'Jost-Medium';
+            font: 500 3.2rem/3.6rem 'Jost-Medium';
         }
 
         p:last-of-type {
-            font: 400 15px/25px 'Jost-Regular';
+            font: 400 1.5rem/2.5rem 'Jost-Regular';
         }
     }
 }
@@ -37,23 +37,23 @@
 
 @include breakpoints.tablet {
     #letsTalk {
-        width: 690px;
-        height: 350px;
-        margin-top: -430px;
-        padding: 57px 0px;
-        border-radius: 15px;
-        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -20px 50%/876px 584px no-repeat;
+        width: 69rem;
+        height: 35rem;
+        margin-top: -43rem;
+        padding: 5.7rem 0;
+        border-radius: 1.5rem;
+        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') -2rem 50%/87.6rem 58.4rem no-repeat;
 
         div {
-            width: 573px;
-            height: 148px;
+            width: 57.3rem;
+            height: 14.8rem;
 
             p:first-of-type {
-                font: 500 40px/40px 'Jost-Medium';
+                font: 500 4rem/4rem 'Jost-Medium';
             }
 
             p:last-of-type {
-                font: 400 16px/26px 'Jost-Regular';
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
     }
@@ -64,35 +64,35 @@
 @include breakpoints.desktop {
     #letsTalk {
         width: 100%;
-        max-width: 1111px;
-        height: 292px;
-        margin-top: -357px;
-        padding: 72px 96px 46px;
+        max-width: 111.1rem;
+        height: 29.2rem;
+        margin-top: -35.7rem;
+        padding: 7.2rem 9.6rem 4.6rem;
         flex-direction: row;
         align-items: flex-start;
-        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') 235px 50%/876px 584px no-repeat;
+        background: var(--peach) url('../../../../../assets/img/shared/pattern-mixed-circles.svg') 23.5rem 50%/87.6rem 58.4rem no-repeat;
 
         div {
-            width: 459px;
-            height: 174px;
+            width: 45.9rem;
+            height: 17.4rem;
             align-items: flex-start;
             text-align: left;
 
             p:first-of-type {
-                width: 268px;
-                height: 98px;
-                font: 500 40px/40px 'Jost-Medium';
+                width: 26.8rem;
+                height: 9.8rem;
+                font: 500 4rem/4rem 'Jost-Medium';
             }
 
             p:last-of-type {
-                width: 459px;
-                height: 78px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 45.9rem;
+                height: 7.8rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
 
         button {
-            margin-top: 46px;
+            margin-top: 4.6rem;
         }
     }
 }
