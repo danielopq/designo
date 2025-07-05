@@ -2,7 +2,7 @@
 
 #sentConfirmation{
     width: 100%;
-    max-width: 1440px;
+    max-width: 144rem;
     height: 100%;
     top:0;
     flex-direction: column;
@@ -14,34 +14,34 @@
     color: white;
 
     p{
-        width: 327px;
-        margin: 150px 0px 50px;
-        font: 400 23px/40px 'Jost-Regular';
+        width: 32.7rem;
+        margin: 15rem 0 5rem;
+        font: 400 2.3rem/4rem 'Jost-Regular';
     }
 }
 
 #contactDetails {
     width: 100vw;
-    height: 764px;
-    padding: 72px 0px 0px;
+    height: 76.4rem;
+    padding: 7.2rem 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-contact-mobile.svg') -92px 0% / 876px no-repeat;
+    background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-contact-mobile.svg') -9.2rem 0% / 87.6rem no-repeat;
     text-align: center;
     color: white;
 
     &>div:first-child {
         p {
-            width: 327px;
-            margin-top: 24px;
-            font: 400 15px/25px 'Jost-Regular';
+            width: 32.7rem;
+            margin-top: 2.4rem;
+            font: 400 1.5rem/2.5rem 'Jost-Regular';
         }
     }
 
     &>div:last-child {
-        width: 327px;
-        margin-top: 48px;
+        width: 32.7rem;
+        margin-top: 4.8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,12 +52,12 @@
 
 @include breakpoints.tablet {
     #contactDetails {
-        max-width: 689px;
-        height: 711px;
-        padding: 71px 58px 0px;
-        background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-desktop.svg') -121px -83px / 640px no-repeat;
+        max-width: 68.9rem;
+        height: 71.1rem;
+        padding: 7.1rem 5.8rem 0rem;
+        background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-desktop.svg') -12.1rem -8.3rem / 64rem no-repeat;
         text-align: left;
-        border-radius: 15px;
+        border-radius: 1.5rem;
 
         &>div:first-child {
             h1 {
@@ -66,14 +66,14 @@
 
             p {
                 width: 100%;
-                margin-top: 32px;
-                font: 400 16px/26px 'Jost-Regular';
+                margin-top: 3.2rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
 
         &>div:last-child {
             width: 100%;
-            margin-top: 40px;
+            margin-top: 4rem;
             align-items: flex-end;
         }
     }
@@ -83,32 +83,32 @@
 
 @include breakpoints.desktop {
     #contactDetails {
-        max-width: 1111px;
-        height: 480px;
-        padding: 0px 95px 0px;
+        max-width: 111.1rem;
+        height: 48rem;
+        padding: 0 9.5rem 0;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-desktop.svg') 0% -160px / 640px no-repeat;
+        background: var(--peach) url('../../../../../assets/img/contact/bg-pattern-hero-desktop.svg') 0% -16rem / 64rem no-repeat;
         text-align: left;
-        border-radius: 15px;
+        border-radius: 1.5rem;
 
         &>div:first-child {
             h1 {
                 width: 100%;
-                margin-top: 135px;
+                margin-top: 13.5rem;
             }
 
             p {
-                width: 445px;
-                margin-top: 32px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 44.5rem;
+                margin-top: 3.2rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
 
         &>div:last-child {
-            width: 380px;
-            margin-top: 55px;
+            width: 38rem;
+            margin-top: 5.5rem;
             align-items: flex-end;
         }
     }
