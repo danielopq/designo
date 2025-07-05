@@ -2,12 +2,12 @@
 
 #homeProjectsNavBar {
     width: 100vw;
-    height: 798px;
-    padding: 0px 24px;
+    height: 79.8rem;
+    padding: 0 2.4rem;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 250px 250px 250px;
-    row-gap: 24px;
+    grid-template-rows: 25rem 25rem 25rem;
+    row-gap: 2.4rem;
     grid-template-areas:
         "web"
         "app"
@@ -18,11 +18,11 @@
 
 @include breakpoints.tablet {
     #homeProjectsNavBar {
-        max-width: 768px;
-        height: 649px;
-        padding: 0px 40px;
-        grid-template-rows: 200px 200px 200px;
-        row-gap: 24px;
+        max-width: 76.8rem;
+        height: 64.9rem;
+        padding: 0 4rem;
+        grid-template-rows: 20rem 20rem 20rem;
+        row-gap: 2.4rem;
     }
 }
 
@@ -30,13 +30,13 @@
 
 @include breakpoints.desktop {
     #homeProjectsNavBar {
-        max-width: 1111px;
-        height: 640px;
-        padding: 0px;
-        grid-template-columns: 541px 541px;
-        grid-template-rows: 308px 308px;
-        row-gap: 24px;
-        column-gap: 30px;
+        max-width: 111.1rem;
+        height: 64rem;
+        padding: 0rem;
+        grid-template-columns: 54.1rem 54.1rem;
+        grid-template-rows: 30.8rem 30.8rem;
+        row-gap: 2.4rem;
+        column-gap: 3rem;
         grid-template-areas:
             "web app"
             "web graphic";
