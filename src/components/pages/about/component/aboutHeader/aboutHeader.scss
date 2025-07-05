@@ -5,31 +5,31 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: var(--peach) url('../../../../../assets/img/about/mobile/bg-pattern-hero-about-mobile.svg') 100% 180px/ 876px no-repeat;
+    background: var(--peach) url('../../../../../assets/img/about/mobile/bg-pattern-hero-about-mobile.svg') 100% 18rem/ 87.6rem no-repeat;
 
     & div:first-of-type {
         width: inherit;
-        height: 320px;
+        height: 32rem;
         background: url('../../../../../assets/img/about/mobile/image-about-hero.jpg') top/cover no-repeat;
     }
 
     & div:last-of-type {
         width: inherit;
-        height: 395px;
-        padding-top: 80px;
+        height: 39.5rem;
+        padding-top: 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: white;
 
         h1 {
-            width: 327px;
+            width: 32.7rem;
         }
 
         p {
-            width: 327px;
-            margin-top: 24px;
-            font: 400 15px/25px 'Jost-Regular';
+            width: 32.7rem;
+            margin-top: 2.4rem;
+            font: 400 1.5rem/2.5rem 'Jost-Regular';
         }
     }
 }
@@ -38,29 +38,29 @@
 
 @include breakpoints.tablet {
     #aboutHeader {
-        max-width: 689px;
-        border-radius: 15px;
+        max-width: 68.9rem;
+        border-radius: 1.5rem;
         overflow: hidden;
-        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') -121px -109px/ 640px no-repeat;
+        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') -12.1rem -10.9rem/ 64rem no-repeat;
 
         & div:first-of-type {
-            max-width: 689px;
+            max-width: 68.9rem;
             background: url('../../../../../assets/img/about/tablet/image-about-hero.jpg') top/cover no-repeat;
         }
 
         & div:last-of-type {
-            max-width: 689px;
-            height: 312px;
-            padding-top: 64px;
+            max-width: 68.9rem;
+            height: 31.2rem;
+            padding-top: 6.4rem;
 
             h1 {
-                width: 573px;
+                width: 57.3rem;
             }
 
             p {
-                width: 573px;
-                margin-top: 32px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 57.3rem;
+                margin-top: 3.2rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
     }
@@ -70,32 +70,32 @@
 
 @include breakpoints.desktop {
     #aboutHeader {
-        max-width: 1111px;
+        max-width: 111.1rem;
         flex-direction: row-reverse;
-        border-radius: 15px;
+        border-radius: 1.5rem;
         overflow: hidden;
         text-align: left;
-        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') 0% -160px/ 640px no-repeat;
+        background: var(--peach) url('../../../../../assets/img/about/desktop/bg-pattern-hero-about-desktop.svg') 0% -16rem/ 64rem no-repeat;
 
         & div:first-of-type {
-            width: 476px;
-            height: 480px;
+            width: 47.6rem;
+            height: 48rem;
             background: url('../../../../../assets/img/about/desktop/image-about-hero.jpg') top/cover no-repeat;
         }
 
         & div:last-of-type {
-            width: 635px;
-            height: 480px;
-            padding-top: 135px;
+            width: 63.5rem;
+            height: 48rem;
+            padding-top: 13.5rem;
 
             h1 {
-                width: 458px;
+                width: 45.8rem;
             }
 
             p {
-                width: 458px;
-                margin-top: 32px;
-                font: 400 16px/26px 'Jost-Regular';
+                width: 45.8rem;
+                margin-top: 3.2rem;
+                font: 400 1.6rem/2.6rem 'Jost-Regular';
             }
         }
     }
