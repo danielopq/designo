@@ -37,7 +37,7 @@ const ContactForm:React.FC = () => {
                         <FormField fieldType='formTextField' fieldId='email' placeholder='Email Address' errorMessage={emailError} ariaLabel='email' />
                         <FormField fieldType='formTextField' fieldId='phone' placeholder='Phone' errorMessage={phoneError} ariaLabel='phone' />
                         <FormField fieldType='formTextArea' fieldId='message' placeholder='Your Message' errorMessage={messageError} ariaLabel='message' />
-                        <BtRegular text='SUBMIT' btType='whiteBg' />
+                        <BtRegular htmlType='submit' text='SUBMIT' btType='whiteBg' />
                     </div>
                 </section>
             </form>
