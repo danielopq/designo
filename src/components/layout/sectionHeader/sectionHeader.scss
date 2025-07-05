@@ -2,8 +2,8 @@
 
 .sectionHeader {
     width: 100vw;
-    height: 320px;
-    padding: 105px 24px 0px;
+    height: 32rem;
+    padding: 10.5rem 2.4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,14 +11,14 @@
     text-align: center;
     background-color: var(--peach);
     background-position: 100% 0%;
-    background-size: 876px;
+    background-size: 87.6rem;
     background-repeat: no-repeat;
 
     p {
         width: 100%;
-        max-width: 327px;
-        margin-top: 24px;
-        font: 400 15px/25px 'Jost-Regular';
+        max-width: 32.7rem;
+        margin-top: 2.4rem;
+        font: 400 1.5rem/2.5rem 'Jost-Regular';
     }
 
 }
@@ -27,13 +27,13 @@
 
 @include breakpoints.tabletAndDesktop {
     .sectionHeader {
-        height: 252px;
-        padding: 64px 70px 0px;
-        border-radius: 15px;
+        height: 25.2rem;
+        padding: 6.4rem 7rem 0;
+        border-radius: 1.5rem;
 
         p {
-            max-width: 400px;
-            font: 400 16px/26px 'Jost-Regular';
+            max-width: 40rem;
+            font: 400 1.6rem/2.6rem 'Jost-Regular';
         }
 
     }
@@ -43,8 +43,8 @@
 
 @include breakpoints.tablet {
     .sectionHeader {
-        max-width: 689px;
-        background-position: -21px 50%;
+        max-width: 68.9rem;
+        background-position: -2.1rem 50%;
     }
 }
 
@@ -52,7 +52,7 @@
 
 @include breakpoints.desktop {
     .sectionHeader {
-        max-width: 1111px;
+        max-width: 111.1rem;
         background-position: 100% 50%;
     }
 }
