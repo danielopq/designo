@@ -58,16 +58,16 @@ h1 {
 }
 
 h1 {
-    font: 500 32px/36px 'Jost-Medium';
+    font: 500 3.2rem/3.6rem 'Jost-Medium';
 }
 
 input,
 textarea {
     width: 100%;
-    padding-left: 24px;
+    padding-left: 2.4rem;
     border: none;
     background-color: transparent;
-    font: 500 15px/26px 'Jost-Medium';
+    font: 500 1.5rem/2.6rem 'Jost-Medium';
     color: white;
 }
 
@@ -77,14 +77,14 @@ textarea:focus {
 }
 
 input:-webkit-autofill, textarea:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0 100rem transparent inset;
   -webkit-text-fill-color: white;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 ::placeholder {
     color: rgba(255, 255, 255, 0.5);
-    font: 500 15px/26px 'Jost-Medium';
+    font: 500 1.5rem/2.6rem 'Jost-Medium';
 }
 
 #root {
@@ -94,18 +94,18 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 
 .defaultTextReg {
-    font: 400 16px/26px 'Jost-Regular';
+    font: 400 1.6rem/2.6rem 'Jost-Regular';
 }
 
 .defaultTextBold {
-    font: 700 16px/26px 'Jost-Bold';
+    font: 700 1.6rem/2.6rem 'Jost-Bold';
 }
 
 //############################## TABLET VERSION ##############################
 
 @include breakpoints.tablet {
     h1 {
-        font: 500 48px/48px 'Jost-Medium';
+        font: 500 4.8rem/4.8rem 'Jost-Medium';
     }
 }
 
@@ -113,6 +113,6 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 
 @include breakpoints.desktop {
     h1 {
-        font: 500 48px/48px 'Jost-Medium';
+        font: 500 4.8rem/4.8rem 'Jost-Medium';
     }
 }
