@@ -2,14 +2,14 @@
 
 #contact {
     width: 100vw;
-    max-width: 1440px;
-    padding-bottom: 120px;
+    max-width: 144rem;
+    padding-bottom: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     #contactForm {
-        margin-bottom: 120px;
+        margin-bottom: 12rem;
     }
 }
 
@@ -17,11 +17,11 @@
 
 @include breakpoints.desktop {
     #contact {
-        padding-bottom: 160px;
-        background: url('../../../assets/img/shared/bg-pattern-leaf.svg') 100% 730px / 1006px no-repeat;
+        padding-bottom: 16rem;
+        background: url('../../../assets/img/shared/bg-pattern-leaf.svg') 100% 73rem / 100.6rem no-repeat;
 
         #contactForm {
-            margin-bottom: 160px;
+            margin-bottom: 16rem;
         }
     }
 }
